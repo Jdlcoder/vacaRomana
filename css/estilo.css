@@ -297,8 +297,31 @@ div button {
 
 /* @@@ ini queEsVacaRomana main @@@  */
 
-.queEs__main {
-    padding: 10px 0 10px 10px;
+#grid__queEs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 170vh 15vh;
+    grid-template-areas: "header"
+                         "queEs__main"
+                         "footer";
+}
+
+#grid__queEs__main {
+    grid-area:queEs__main ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "queEs__s1 queEs__main__img1" "queEs__s2 queEs__main__img2";
+    align-items: center;
+    padding-left: 2em;
+}
+
+#queEs__s1 {
+    grid-area: queEs__s1 ;
+}
+
+#queEs__s2 {
+    grid-area: queEs__s2 ;
 }
 
 .queEs__main__titulo {
@@ -312,24 +335,35 @@ div button {
 }
 
 #queEs__main__img1 {
-    position:absolute;
-    top:120px;
-    left:600px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    grid-area:queEs__main__img1 ;
 }
 
 #queEs__main__img2 {
-    position:absolute;
-    top:742px;
-    left:600px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    grid-area:queEs__main__img2 ;
 }
 /* @@@ fin queEsVacaRomana @@@  */
 
 /* @@@ ini comoFunciona @@@ */
 
+#grid__comoFunciona {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-areas: "header"
+                         "comoFunciona__main"
+                         "footer";
+}
+
+#grid__comoFunciona__main{
+    display: grid;
+    grid-area: comoFunciona__main;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "comoFunciona__main__paso1 comoFunciona__main__paso2 comoFunciona__main__paso3"
+                         "comoFunciona__main__img comoFunciona__main__img1 comoFunciona__main__img3";
+    align-items: end;
+    justify-items: center;
+}
 .comoFunciona__main__pasos {
     /* cambiamos el color del título */
     font-size: 2em;
@@ -337,28 +371,60 @@ div button {
     color: #300395;
 }
 
+#comoFunciona__main__paso1 {
+    grid-area: comoFunciona__main__paso1;
+}
+
+#comoFunciona__main__paso2 {
+    grid-area: comoFunciona__main__paso2;
+}
+
+#comoFunciona__main__paso3 {
+    grid-area: comoFunciona__main__paso3;
+}
+
 .comoFunciona__main__img {
-    display: inline-block;
-    padding-left: 45px;
-    padding-bottom: 126px;
+    grid-area:comoFunciona__main__img;
 }
 
 #comoFunciona__main__img1 {
-    display: inline-block;
-    padding-left: 45px;
-    position: relative;
-    bottom: 89px;
+    grid-area:comoFunciona__main__img1;
 }
 
 #comoFunciona__main__img3 {
-    display: inline-block;
-    position: relative;
-    padding-left: 50px;
-    bottom: 80px;
+    grid-area:comoFunciona__main__img3;
 }
 /* @@@ fin comoFunciona @@@ */
 
 /* @@@ ini experiencias @@@ */
+
+#grid__experiencias {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-areas: "header"
+                         "experiencias__main"
+                         "footer";
+}
+
+#grid__experiencias__main {
+    grid-area:experiencias__main;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "experiencias__titulo1 experiencias__img" "experiencias__titulo2 experiencias__img";
+    align-items: center;
+    justify-items: center;
+    padding-left: 1em;
+}
+
+#experiencias__titulo1 {
+    grid-area: experiencias__titulo1;
+}
+
+#experiencias__titulo2 {
+    grid-area: experiencias__titulo2;
+}
 
 .experiencias__titulo {
     font-weight: bold;
@@ -372,33 +438,48 @@ div button {
 }
 
 .experiencias__img{
-    position: absolute;
-    top:290px;
-    left:500px;
+    grid-area:experiencias__img;
 } 
 /* @@@ fin experiencias @@@ */
 
 /* @@@ ini bajatela @@@ */
 
-.bajatela{
-    width: 500px;
-    padding:98px 0px 25px 15px;
+#grid__bajatela {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-areas: "header"
+                         "bajatela__main"
+                         "footer";
+}
+
+#grid__bajatela__main {
+    grid-area: bajatela__main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bajatela__titulo bajatela__img" "bajatela_img_stores bajatela__img";
+    align-items:center;
+}
+
+.bajatela {
+    padding: 0 1em 0 1em;
 }
 
 .bajatela__titulo {
+    grid-area:bajatela__titulo ;
     line-height: 25px;
-    padding:20px 0 75px 0;
 }
 
 .bajatela__img{
-    position: absolute;
-    top:290px;
-    left:500px;
-    
+    grid-area: bajatela__img;
+    align-self: center;
 } 
 
-.bajatela_img_stores {
-    padding-bottom: 100px;
+.bajatela__img__stores {
+    grid-area:bajatela_img_stores;
+    align-items: center;
+    /* padding-bottom: 100px; */
 }
 /* @@@ fin bajatela @@@ */
 
@@ -459,7 +540,7 @@ div button {
 
     /* @@@ ini main @@@ */
     
-    #grid__home {
+    #grid__home,#grid__comoFunciona, #grid__experiencias,#grid__bajatela {
         grid-template-rows: 17vh 70vh 15vh;
     }
 
@@ -581,7 +662,6 @@ div button {
     }
 
     #contacto__form {
-        /* display: grid; */
         grid-template-columns:  100% ;
         grid-template-rows:  repeat(6,.1fr);
         grid-template-areas: "contacto__nombre" 
@@ -600,7 +680,64 @@ div button {
     input[type="text"], input[type="tel"],input[type="email"] {
         width: 50%;
     }
-
     /* @@@ fin contacto @@@ */
-}
+    
+    /* @@@ ini que es @@@ */
+
+    #grid__queEs {
+        grid-template-rows: 17vh 190vh 15vh;
+    }
+
+    #grid__queEs__main {
+        grid-area:queEs__main ;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:  "queEs__s1" "queEs__main__img1"  "queEs__s2" "queEs__main__img2";
+        align-items: center;
+        text-align: center;
+    }
+
+    #queEs__s1, #queEs__s2 {
+        padding-top:1em;
+    }
+    /* @@@ fin que es @@@ */
+
+    /* @@@ ini como funcion @@@ */
+
+    #grid__comoFunciona__main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: "comoFunciona__main__paso1" "comoFunciona__main__img" "comoFunciona__main__paso2" "comoFunciona__main__img1" "comoFunciona__main__paso3" "comoFunciona__main__img3";
+        align-items: center;
+    }
+    /* @@@ fin como funcion @@@ */
+
+    /* @@@ ini experiencias @@@ */
+
+    #grid__experiencias__main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: "experiencias__titulo1" "experiencias__img" "experiencias__titulo2";
+    }
+     /* @@@ fin experiencias @@@ */
+
+     /* @@@ ini bajatela @@@ */
+
+     #grid__bajatela__main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "bajatela__titulo" "bajatela_img_stores" "bajatela__img";
+        justify-items: center;
+        text-align: center;
+        padding: 1em;
+     }
+
+     .bajatela_img {
+        align-self: center;
+        justify-self: center;
+     }
+     /* @@@ fin bajatela @@@ */
+
+} 
     
