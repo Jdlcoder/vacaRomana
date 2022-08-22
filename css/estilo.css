@@ -133,20 +133,18 @@ footer nav {
 
 #grid__home {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 70vh 15vh;
     grid-template-areas: "header"
                          "main"
                          "footer";
+    min-height: 100vh;
 }
 
 #grid__home__main {
     display: grid;
-    grid-template-columns: 25em 25em;
-    grid-template-rows: 30em;
+    grid-template-columns: 25em 20em;
     grid-template-areas: "home__main__section home__main__img";
     justify-content: space-around;
-    padding-top: 3em;
+    padding: 1.5em 0 1em 0;
 }
 
 #home__main__section {
@@ -187,7 +185,7 @@ footer nav {
 
 #home_main__img--size {
     /* ajustamos tamaño de imagen */
-    width: 244px;
+    width: 240px;
     height: auto;
 }
 
@@ -203,11 +201,10 @@ footer nav {
 
 #grid__contacto {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 70vh 15vh;
     grid-template-areas: "header"
                          "contacto__main"
                          "footer";
+    min-height: 100vh;
 }
 
 #grid__contacto__main {
@@ -216,23 +213,17 @@ footer nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     align-content: center;
-    height: 80vh;
 }
 
 #contacto__form {
     display: grid;
     grid-template-columns:  50% 50%;
-    grid-template-rows:  20% 20% 65% 50%;
     grid-template-areas: "contacto__nombre contacto__apellido"
                          "contacto__telefono contacto__email"
                          "contacto__mensaje contacto__mensaje"
                          "contacto__botones .";
-}
-
-.contacto__titulo {
-    max-width: 30vw;
+    padding: 0 2em 0 2em;
 }
 
 #contacto__nombre {
@@ -257,15 +248,22 @@ footer nav {
 }
 form div div textarea {
     resize: none;
+    height: 4em;
+    width: 25em;
 }
 
 .contacto__botones {
     grid-area: contacto__botones;
-    padding: 5px;
+    padding-bottom: .2em;
+}
+
+.contacto__titulo {
+    padding: 0 0 0 1em;
 }
 
 .contacto__titulo--p {
     line-height: 25px;
+    padding: 0 0 1em 0;
 }
 
 /* modifico la clase generica a medida para el mensaje */
@@ -293,27 +291,29 @@ div button {
     background-color: #edf3f6;
     padding: 5px;
 }
+
+label {
+    font-family: 'Roboto', sans-serif;
+}
 /* @@@ fin contacto @@@ */
 
 /* @@@ ini queEsVacaRomana main @@@  */
 
 #grid__queEs {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 170vh 15vh;
     grid-template-areas: "header"
                          "queEs__main"
                          "footer";
+    min-height: 100vh;
 }
 
 #grid__queEs__main {
     grid-area:queEs__main ;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: "queEs__s1 queEs__main__img1" "queEs__s2 queEs__main__img2";
     align-items: center;
-    padding-left: 2em;
+    padding: 1em 0 1em 1em;
 }
 
 #queEs__s1 {
@@ -325,21 +325,26 @@ div button {
 }
 
 .queEs__main__titulo {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #300395;
 }
 
 .queEs__main__titulo--p {
     line-height: 25px;
+    font-size: 1em;
 }
 
 #queEs__main__img1 {
     grid-area:queEs__main__img1 ;
+    justify-self: center;
+    padding: 1em 0 .5em 0;
 }
 
 #queEs__main__img2 {
     grid-area:queEs__main__img2 ;
+    justify-self: center;
+    padding: 1em 0 .5em 0;
 }
 /* @@@ fin queEsVacaRomana @@@  */
 
@@ -347,18 +352,15 @@ div button {
 
 #grid__comoFunciona {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 70vh 15vh;
     grid-template-areas: "header"
                          "comoFunciona__main"
                          "footer";
+    min-height: 100vh;
 }
 
 #grid__comoFunciona__main{
     display: grid;
     grid-area: comoFunciona__main;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
     grid-template-areas: "comoFunciona__main__paso1 comoFunciona__main__paso2 comoFunciona__main__paso3"
                          "comoFunciona__main__img comoFunciona__main__img1 comoFunciona__main__img3";
     align-items: end;
@@ -366,9 +368,10 @@ div button {
 }
 .comoFunciona__main__pasos {
     /* cambiamos el color del título */
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #300395;
+    padding: 1em 0 1em 0;
 }
 
 #comoFunciona__main__paso1 {
@@ -400,22 +403,19 @@ div button {
 
 #grid__experiencias {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 70vh 15vh;
     grid-template-areas: "header"
                          "experiencias__main"
                          "footer";
+    min-height: 100vh;                     
 }
 
 #grid__experiencias__main {
     grid-area:experiencias__main;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
     grid-template-areas: "experiencias__titulo1 experiencias__img" "experiencias__titulo2 experiencias__img";
     align-items: center;
     justify-items: center;
-    padding-left: 1em;
+    padding: 1em;
 }
 
 #experiencias__titulo1 {
@@ -439,6 +439,7 @@ div button {
 
 .experiencias__img{
     grid-area:experiencias__img;
+    padding: 1em 0 1em 1em;
 } 
 /* @@@ fin experiencias @@@ */
 
@@ -446,18 +447,15 @@ div button {
 
 #grid__bajatela {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 70vh 15vh;
     grid-template-areas: "header"
                          "bajatela__main"
                          "footer";
+    min-height: 100vh;
 }
 
 #grid__bajatela__main {
     grid-area: bajatela__main;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-template-areas: "bajatela__titulo bajatela__img" "bajatela_img_stores bajatela__img";
     align-items:center;
 }
@@ -474,12 +472,12 @@ div button {
 .bajatela__img{
     grid-area: bajatela__img;
     align-self: center;
+    padding: 0 1em 0 0;
 } 
 
 .bajatela__img__stores {
     grid-area:bajatela_img_stores;
     align-items: center;
-    /* padding-bottom: 100px; */
 }
 /* @@@ fin bajatela @@@ */
 
@@ -494,13 +492,7 @@ div button {
 
     #home__main__section {
         padding-left: 2em;
-        padding-top: 0;
-    }
-    
-    #home_main__img--size {
-        width: 200px;
-        height: auto;
-        padding-bottom: 3em;
+        padding-top: 5em;
     }
 
     .home__main__BtnStores {
@@ -511,59 +503,68 @@ div button {
     /* @@@ fin main @@@ */
 }
 
+@media only screen and (max-width: 870px) {
+    /* @@@ ini header @@@ */
+
+    header {
+        flex-direction: column;
+    }
+    /* @@@ fin header @@@ */
+
+    /* @@@ ini main @@@ */
+
+    #home_main__img--size {
+        width: 200px;
+        height: auto;
+        padding: 0.5em 0 0 0;
+    }
+    
+    #queEs__main__img1--size {
+        width: 200px;
+        height: auto;
+        /* padding: 0.5em 0 0 0; */
+    }
+
+    #queEs__main__img2--size {
+        width: 200px;
+        height: auto;
+        /* padding: 0.5em 0 0 0; */
+    }
+    /* @@@ fin main @@@ */
+}
 
 @media only screen and (max-width: 768px) {
     
-    /* @@@ ini main @@@ */
-
-    #grid__main {
-        grid-template-rows: 17vh 70vh 15vh;
-    }
-    #grid__contacto__main {
-        padding-bottom: 15vh;
-    }
-    /* @@@ fin main @@@ */
-
     /* @@@ ini contacto @@@ */
-    #grid__contacto {
-        grid-template-rows: 17vh 70vh 15vh;
-    }
 
     .contacto__titulo {
-        max-width: 80vw;
-        padding-bottom: 2vh;
+        padding: 1em 0 0 1em;
     }
     /* @@@ fin contacto @@@ */
-}
-    
-@media only screen and (max-width: 500px) {
 
     /* @@@ ini main @@@ */
     
-    #grid__home,#grid__comoFunciona, #grid__experiencias,#grid__bajatela {
-        grid-template-rows: 17vh 70vh 15vh;
-    }
-
     #grid__home__main {
         display: flex;
         flex-direction: column-reverse;
         justify-content: start;
         align-items: flex-start;
+        padding-top:2em;
     }
 
     #home__main__section {
         padding-top: 0;
-        padding-bottom: 1em;
+        padding-bottom: 0em;
         padding-left: 0;
         text-align: center;
     }
     
     .home__main__div_descripcion--color {
-        padding: 0 .5em 1em .5em;
+        padding: 0 .5em 0em .5em;
     }
     
     .home__main__div__descripcion__p {
-        padding: 0 .5em 1em .5em;
+        padding: 0 .5em .1em .5em;
     }
 
     #home_main__img--size {
@@ -575,7 +576,7 @@ div button {
         justify-content: center;
         align-items: center;
         /* ajustamos tamaño de imagen */
-        width: 244px;
+        width: 180px;
         height: auto;
     }
     
@@ -589,8 +590,7 @@ div button {
 
     footer {
         display: grid;
-        grid-template-columns: 1fr 0.8fr;
-        grid-template-rows: 3fr 1fr ;
+        grid-template-columns: .8fr 1.3fr;
         grid-template-areas: "redes menu"
                              "footer-marca footer-marca";
     }
@@ -632,6 +632,7 @@ div button {
         grid-area: menu;
         display: inline-flex;
         line-height: .1em;
+        justify-content: flex-end;
     }
     
     footer nav ul li {
@@ -649,50 +650,36 @@ div button {
 
     /* @@@ ini contacto @@@ */
 
-    #grid__contacto {
-        grid-template-rows: 17vh 70vh 15vh;
-    }
-
     #grid__contacto__main {
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items:center;
         flex-wrap: wrap;
         align-content: center;  
+        padding: 1em 0 .5em 0;
     }
 
     #contacto__form {
-        grid-template-columns:  100% ;
-        grid-template-rows:  repeat(6,.1fr);
-        grid-template-areas: "contacto__nombre" 
-                             "contacto__apellido"
-                             "contacto__telefono" 
-                             "contacto__email"
-                             "contacto__mensaje"
-                             "contacto__botones";
+        grid-template-columns:  50% 50% ;
+        grid-template-areas: "contacto__nombre contacto__apellido"
+                             "contacto__telefono  contacto__email"
+                             "contacto__mensaje contacto__mensaje"
+                             "contacto__botones contacto__botones";
+        padding:  0 0 .1em 1em;
     }
 
     .contacto__titulo {
-        max-width: 80vw;
-        padding-bottom: 2vh;
-    }
-
-    input[type="text"], input[type="tel"],input[type="email"] {
-        width: 50%;
+        /* max-width: 80vw; */
+        padding: .1em 0 .1em 1em;
     }
     /* @@@ fin contacto @@@ */
     
     /* @@@ ini que es @@@ */
 
-    #grid__queEs {
-        grid-template-rows: 17vh 190vh 15vh;
-    }
-
     #grid__queEs__main {
         grid-area:queEs__main ;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas:  "queEs__s1" "queEs__main__img1"  "queEs__s2" "queEs__main__img2";
         align-items: center;
         text-align: center;
@@ -706,8 +693,6 @@ div button {
     /* @@@ ini como funcion @@@ */
 
     #grid__comoFunciona__main{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,1fr);
         grid-template-areas: "comoFunciona__main__paso1" "comoFunciona__main__img" "comoFunciona__main__paso2" "comoFunciona__main__img1" "comoFunciona__main__paso3" "comoFunciona__main__img3";
         align-items: center;
     }
@@ -716,8 +701,6 @@ div button {
     /* @@@ ini experiencias @@@ */
 
     #grid__experiencias__main {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
         grid-template-areas: "experiencias__titulo1" "experiencias__img" "experiencias__titulo2";
     }
      /* @@@ fin experiencias @@@ */
@@ -725,12 +708,14 @@ div button {
      /* @@@ ini bajatela @@@ */
 
      #grid__bajatela__main {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "bajatela__titulo" "bajatela_img_stores" "bajatela__img";
         justify-items: center;
         text-align: center;
         padding: 1em;
+     }
+
+     .bajatela , .bajatela__img__stores{
+        padding: 0 1em 1em 1em;
      }
 
      .bajatela_img {
@@ -739,5 +724,82 @@ div button {
      }
      /* @@@ fin bajatela @@@ */
 
-} 
+}
+
+@media only screen and (max-width: 500px) {
+    /* @@@ m500 ini home @@@  */
+
+    #grid__home__main {
+        padding: 1em 0 .5em 0;
+    }
+    
+    .home__main__div_descripcion--color{
+        font-size: 1.5em;
+    }
+    
+    .home__main__div__descripcion__p{
+        font-size: 1em;
+    }
+    
+    #home_main__img--size--small {
+        /* ajustamos tamaño de imagen */
+        width: 180px;
+    }
+    
+    .home__main__BtnStores {
+        padding: 2em 0 0.2em 0;
+    }
+
+    .home__main__BtnStores--size {
+        /* ajustamos tamaño de imagen */
+        width: 170px;
+        height: auto;
+    }
+    /* @@@ m500 fin home @@@  */
+
+    /* @@@ m500 ini footer @@@  */
+
+    footer {
+        grid-template-columns: .8fr 2fr;
+    }
+    /* @@@ m500 fin footer @@@  */
+
+    /* @@@ m500 ini contacto @@@  */
+    
+    #contacto__form {
+        grid-template-columns:  100% ;
+        grid-template-areas: "contacto__nombre" "contacto__apellido"
+                             "contacto__telefono"  "contacto__email"
+                             "contacto__mensaje "
+                             "contacto__botones";
+        padding: 0 0 0em 1em;                     
+    }
+
+    .contacto__label--mensaje {
+        margin: 0;
+    }
+    
+    #contacto__mensaje {
+        padding: 0.5em 0 1em 0em;
+    }
+    
+    .contacto__titulo {
+        padding: .1em 1em .1em 1em;
+    }
+    
+    form div div textarea {
+        height: 4em;
+        width: 80vw;
+    }
+    /* @@@ m500 fin contacto @@@  */
+
+    /* @@@ m500 ini experiencias @@@  */
+
+    #experiencias__img--size {
+        /* ajustamos tamaño de imagen */
+        width: 280px;
+        height: auto;
+    }
+    /* @@@ m500 fin exoeriencias @@@  */
+}
     
