@@ -41,7 +41,9 @@ ul li a, header a, footer div p {
 /* @@@ ini header @@@ */
 
 header {
-    background-color: #6424fc;
+    /* background-color: #6424fc; */
+    background: rgb(52,167,247);
+    background: radial-gradient(circle, rgba(52,167,247,1) 74%, rgba(100,36,252,1) 100%);
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -144,7 +146,7 @@ footer nav {
     grid-template-columns: 25em 20em;
     grid-template-areas: "home__main__section home__main__img";
     justify-content: space-around;
-    padding: 1.5em 0 1em 0;
+    padding: 1em 0 1em 0;
 }
 
 #home__main__section {
@@ -187,13 +189,53 @@ footer nav {
     /* ajustamos tamaño de imagen */
     width: 240px;
     height: auto;
+    /* agregamos animación para que la imagen aparezca de menor a mayor */
+    animation-name: animacion__home__main;
+    animation-duration: 2s;
 }
 
 #home_main__img--size--small {
     display: none;
-    /* ajustamos tamaño de imagen */
+     /* ajustamos tamaño de imagen  */
     width: 244px;
     height: auto;
+}
+
+/* aplico la animacion solo cuando la img del home es la completa */
+@keyframes animacion__home__main {
+    0% {
+        transform: scale(0);
+    }
+    10% {
+        transform: scale(0.1);
+    }
+    20% {
+        transform: scale(0.2);
+    }
+    30% {
+        transform: scale(0.3);
+    }
+    40% {
+        transform: scale(0.4);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    60% {
+        transform: scale(0.6);
+    }
+    70% {
+        transform: scale(0.7);
+    }
+    80% {
+        transform: scale(0.8);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 /* @@@ fin del home @@@ */
 
@@ -294,6 +336,11 @@ div button {
 
 label {
     font-family: 'Roboto', sans-serif;
+}
+
+/* aplicamos una transicion */
+form div div input:hover, #input_mensaje:hover , div button:hover {
+    background-color: #bdc484;
 }
 /* @@@ fin contacto @@@ */
 
@@ -520,9 +567,7 @@ label {
     }
     
     #queEs__main__img1--size {
-        width: 200px;
-        height: auto;
-        /* padding: 0.5em 0 0 0; */
+        transform: scale(.9);
     }
 
     #queEs__main__img2--size {
@@ -549,7 +594,6 @@ label {
         flex-direction: column-reverse;
         justify-content: start;
         align-items: flex-start;
-        padding-top:2em;
     }
 
     #home__main__section {
@@ -747,13 +791,12 @@ label {
     }
     
     .home__main__BtnStores {
-        padding: 2em 0 0.2em 0;
+        padding: 1em 0 0.2em 0;
     }
 
     .home__main__BtnStores--size {
         /* ajustamos tamaño de imagen */
-        width: 170px;
-        height: auto;
+        transform: scale(.85);
     }
     /* @@@ m500 fin home @@@  */
 
@@ -797,8 +840,11 @@ label {
 
     #experiencias__img--size {
         /* ajustamos tamaño de imagen */
-        width: 280px;
-        height: auto;
+        transform: scale(0.8);
+    }
+
+    .experiencias__img {
+        padding: 0;
     }
     /* @@@ m500 fin exoeriencias @@@  */
 }
