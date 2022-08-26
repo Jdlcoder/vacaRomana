@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,63 +17,87 @@
     <title>Vaca Romana - Cómo funciona?</title>
 </head>
 
-<body id="grid__comoFunciona">
+<body>
     <!-- ini cabecera con logo + barra navegación -->
     <header>
-        <a class="header__logo quitar_subrayado_asginar_color_blanco" href="../index.html">Vaca Romana</a>
-        <nav>
-            <ul>
-                <li><a class="quitar_subrayado_asginar_color_blanco" href="./queEsVacaRomana.html">Qué es Vaca Romana?</a></li>
-                <li><a class="quitar_subrayado_asginar_color_blanco" href="#">Cómo funciona?</a></li>
-                <li><a class="quitar_subrayado_asginar_color_blanco" href="./experiencias.html">Experiencias</a></li>
-                <li><a class="quitar_subrayado_asginar_color_blanco" href="./bajatela.html">Bajátela</a></li>
-                <li><a class="quitar_subrayado_asginar_color_blanco" href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-1 text-white" href="../index.html">Vaca Romana</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item text-white">
+                            <a class="nav-link text-white" href="./queEsVacaRomana.html">Qué es Vaca Romana?</a> </li> <li
+                                class="nav-item">
+                                <a class="nav-link text-white" href="./comoFunciona.html">Cómo funciona?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./experiencias.html">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./bajatela.html">Bajátela</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- fin cabecera con logo + barra navegación -->
     <!-- ini pantalla principal con el detalle de los pasos para descargar y usar la app -->
     <main id="grid__comoFunciona__main">
-        <!-- listado de pasos en texto -->
-        <div class="comoFunciona__main__pasos animate__animated animate__backInUp" id="comoFunciona__main__paso1">
-            <p>Paso 1</p>
+        <div class="containter-fluid">
+            <!-- listado de pasos en texto -->
+            <section class="row">
+                <article class="col12 col-md-4">
+                    <div class="h2 text-primary fw-bold text-center animate__animated animate__backInUp ">
+                        <p>Paso 1</p>
+                        <div id="comoFunciona__main__img1"><img src="../images/download.png" width="180px" alt="Imagen paso 1: descargar app"></div>
+                    </div>
+                </article>
+                <article class="col12 col-md-4">
+                    <div class="h2 text-primary fw-bold text-center animate__animated animate__backInDown animate__delay-1s">
+                        <p>Paso 2</p>
+                        <div class="comoFunciona__main__img"><img src="../images/plantilla-login_1017-6719.webp" width="180px" alt="Imagen paso 2: registrarse"></div>
+                    </div>
+                </article>
+                <article class="col12 col-md-4">
+                    <div class="h2 text-primary fw-bold text-center animate__animated animate__backInUp animate__delay-2s">
+                        <p>Paso 3</p>
+                        <div id="comoFunciona__main__img3"><img src="../images/usar_app.jpeg" width="180px" alt="Imagen paso 3: Dusfrutar"></div>
+                    </div>
+                </article>
+            </section>
         </div>
-        <div class="comoFunciona__main__pasos animate__animated animate__backInDown animate__delay-1s" id="comoFunciona__main__paso2">
-            <p>Paso 2</p>
-        </div>
-        <div class="comoFunciona__main__pasos animate__animated animate__backInUp animate__delay-2s" id="comoFunciona__main__paso3">
-            <p>Paso 3</p>
-        </div>
-        <br>
         <!-- imágenes para linkear a cada paso -->
-        <div id="comoFunciona__main__img1"><img src="../images/download.png" width="180px" alt="Imagen paso 1: descargar app"></div>
-        <div class="comoFunciona__main__img"><img src="../images/plantilla-login_1017-6719.webp" width="180px" alt="Imagen paso 2: registrarse"></div>
-        <div id="comoFunciona__main__img3"><img src="../images/usar_app.jpeg" width="180px" alt="Imagen paso 3: Dusfrutar"></div>
-        
     </main>
     <!-- fin pantalla principal con el detalle de los pasos para descargar y usar la app -->
     <!-- ini pie página con marca y links redes sociales -->
-    <footer>
-        <div class="footer-marca">Vaca Romana @2022</div>
-        <div id="redes">
-            <p>Síguenos en:</p>
-            <ul>
-                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
-                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-            </ul>
+    <footer class="container-fluid">
+        <div class="row bg-secondary text-white align-items-center p-2 h-20">
+            <div class="col-12 col-md-6 order-1 text-center text-md-start fs-5">Vaca Romana @2022</div>
+            <div class="col-12 col-md-5 d-block-flex justify-content-around text-end order-md-5" id="footer__redes">
+                <p>Síguenos en:</p>
+                <ul class="list-unstyled d-block-flex">
+                    <li><a class="text-white text-decoration-none" id="footer__redes__li" href="https://instagram.com"
+                            target="_blank">Instagram</a></li>
+                    <li><a class="text-white text-decoration-none" id="footer__redes__li" href="https://tiktok.com"
+                            target="_blank">TikTok</a></li>
+                    <li><a class="text-white text-decoration-none" id="footer__redes__li" href="https://twitter.com"
+                            target="_blank">Twitter</a></li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="./queEsVacaRomana.html">Qué es Vaca Romana?</a></li>
-                <li><a href="./comoFunciona.html">Cómo funciona?</a></li>
-                <li><a href="./experiencias.html">Experiencias</a></li>
-                <li><a href="./bajatela.html">Bajátela</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </footer>
     <!-- fin pie página con marca y links redes sociales -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+</script>
 </body>
 
 </html>

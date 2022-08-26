@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,80 +16,105 @@
     <title>Vaca Romana - Contacto</title>
 </head>
 
-<body id="grid__contacto">
+<body>
     <!-- ini cabecera con logo + barra navegación -->
     <header>
-        <a class="header__logo quitar_subrayado_asginar_color_blanco" href="../index.html">Vaca Romana</a>
-        <nav>
-            <ul>
-                <li><a class="quitar_subrayado_asginar_color_blanco" href="./queEsVacaRomana.html">Qué es Vaca
-                        Romana?</a></li>
-                <li><a class="quitar_subrayado_asginar_color_blanco" href="./comoFunciona.html">Cómo funciona?</a></li>
-                <li><a class="quitar_subrayado_asginar_color_blanco" href="./experiencias.html">Experiencias</a></li>
-                <li><a class="quitar_subrayado_asginar_color_blanco" href="./bajatela.html">Bajátela</a></li>
-                <li><a class="quitar_subrayado_asginar_color_blanco" href="#">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-1 text-white" href="../index.html">Vaca Romana</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item text-white">
+                            <a class="nav-link text-white" href="./queEsVacaRomana.html">Qué es Vaca Romana?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./comoFunciona.html">Cómo funciona?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./experiencias.html">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./bajatela.html">Bajátela</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- fin cabecera con logo + barra navegación -->
     <!-- ini pantalla principal con formulario de contacto -->
-    <main id="grid__contacto__main">
-        <section class="contacto__titulo">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            <p class="contacto__titulo--p" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque accusantium voluptatum assumenda
-                qui, voluptate sapiente temporibus impedit laboriosam</p>
+    <main>
+        <section class="container-fluid" id="contacto">
+            <div class="row">
+                <article class="col12 col-md-6 align-self-center text-md-start text-center">
+                    <h1 class="h2 text-primary fw-bold text-center text-md-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    <p class="text-center text-md-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
+                        accusantium voluptatum assumenda
+                        qui, voluptate sapiente temporibus impedit laboriosam</p>
+                </article>
+                <article class="col12 col-md-6 align-self-center">
+                    <form class="row g-3">
+                        <div class="col-6">
+                            <label for="inputNombre" class="form-label"> Nombre</label>
+                            <input type="text" class="form-control" id="inputNombre">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputApellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="inputApellido">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputTelefono" class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="inputTelefono">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="floatingTextarea2">Escribe aquí tu mensaje:</label>
+                        </div>
+                        <div class="form-floating col-12">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="reset" class="btn btn-primary">Limpiar</button>
+                        </div>
+                    </form>
+                </article>
+            </div>
         </section>
-            
-        <form id="contacto__form" action="" method="post">
-                <div id="contacto__nombre">
-                    <div class="contacto__label"><label for="nombre">Nombre</label></div>
-                    <div class="contacto__input"><input type="text" name="nombre" id="input_nombre"></div>
-                </div>
-                <div id="contacto__apellido">    
-                    <div class="contacto__label"><label for="apellido">Apellido</label></div>
-                    <div class="contacto__input"><input type="text" name="apellido" id="input_apellido"></div>
-                </div>
-                <div id="contacto__telefono">
-                    <div class="contacto__label"><label for="telefono">Teléfono</label></div>
-                    <div class="contacto__input"><input type="tel" name="telefono" id="input_telefono"></div>
-                </div>
-                <div id="contacto__email">
-                    <div class="contacto__label--email"><label for="email">Email</label></div>
-                    <div class="contacto__input"><input type="email" name="email" id="input_email"></div>
-                </div>
-                <div id="contacto__mensaje">
-                    <div class="contacto__label--mensaje"><label for="mensaje">Escribe aquí tu mensaje:</label></div>
-                    <div class="contacto__input__textarea"><textarea name="mensaje" id="input_mensaje" cols="50" rows="5"></textarea></div>
-                </div>
-                <div class="contacto__botones">
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpiar</button>
-                </div>
-        </form>
     </main>
     <!-- fin pantalla principal con formulario de contacto -->
     <!-- ini pie página con marca y links redes sociales -->
-    <footer>
-        <div class="footer-marca">Vaca Romana @2022</div>
-        <div id="redes">
-            <p>Síguenos en:</p>
-            <ul>
-                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
-                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-            </ul>
+    <footer class="container-fluid">
+        <div class="row bg-secondary text-white align-items-center p-2 h-20">
+            <div class="col-12 col-md-6 order-1 text-center text-md-start fs-5">Vaca Romana @2022</div>
+            <div class="col-12 col-md-5 d-block-flex justify-content-around text-end order-md-5" id="footer__redes">
+                <p>Síguenos en:</p>
+                <ul class="list-unstyled d-block-flex">
+                    <li><a class="text-white text-decoration-none" id="footer__redes__li" href="https://instagram.com"
+                            target="_blank">Instagram</a></li>
+                    <li><a class="text-white text-decoration-none" id="footer__redes__li" href="https://tiktok.com"
+                            target="_blank">TikTok</a></li>
+                    <li><a class="text-white text-decoration-none" id="footer__redes__li" href="https://twitter.com"
+                            target="_blank">Twitter</a></li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="./queEsVacaRomana.html">Qué es Vaca Romana?</a></li>
-                <li><a href="./comoFunciona.html">Cómo funciona?</a></li>
-                <li><a href="./experiencias.html">Experiencias</a></li>
-                <li><a href="./bajatela.html">Bajátela</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </footer>
     <!-- fin pie página con marca y links redes sociales -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -1,205 +1,157 @@
-/* @@@ css reset @@@ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* paleta de colores 
-.color1 { #6424fc };
-.color2 { #a27afc };
-.color3 { #280182 };
-.color4 { #2e0296 };
-.color5 { #300395 };
-*/
-
-/* @@@ ini configuracion por defecto para todo el sitio @@@ */
-html {
-    /* definimos la fuente por defecto */
-    font-family: 'Roboto', sans-serif;
+body {
+    /* sobreescribimos la fuente por defecto */
+    font-family: 'Roboto', sans-serif!important;
 }
 
 main {
     background-color: #d8d9db;
-    grid-area: main;
 }
-
-h1 {
-    color: #300395;
-}
-/* @@@ fin configuracion por defecto para todo el sitio @@@ */
-
-/* @@@ ini estilos reutilizables @@@ */
-
-ul li a, header a, footer div p {
-    /* quitamos subrayado del a href y cambiamos el color*/
-    text-decoration: none;
-    color: #fff;
-}
-/* @@@ fin estilos reutilizables @@@ */
 
 /* @@@ ini header @@@ */
 
-header {
-    /* background-color: #6424fc; */
-    background: rgb(52,167,247);
-    background: radial-gradient(circle, rgba(52,167,247,1) 74%, rgba(100,36,252,1) 100%);
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:center;
-    flex-wrap: wrap;
-    text-align: center;
-    /* lo dejamos fijo en la parte superior acupando todo el ancho */
-    position: sticky;
-    top: 0;
-    width: 100%;
-    /* le damos peso como para que no quede superpuesto por otro elemento */
-    z-index: 3;
-    grid-area: header;
-}
-
-header a {
-    font-size: 2,34em;
-}
-
-.header__logo {
-    /* usamos otra fuente para el logo */
+.navbar-brand {
     font-family: 'Mochiy Pop One', sans-serif;
-    font-size: 2em;
-    /* lo ubicamos en la parte superior izquierda */
-    display: inline-block;
-    margin: 5px 0px 5px 5px;
 }
-
-header nav ul li {
-    /* quitamos las viñetas */
-    list-style: none;
-    /* para tener padding y margin hacia arriba y abajo: inline-block */
-    display: inline-block;
-    margin: 10px 10px 10px 0px;
-    padding: 0 5px 0 5px;
-}
-/* @@@ fin del header @@@ */
+/* @@@ fin header @@@ */
 
 /* @@@ ini footer @@@ */
 
-footer {
-    background-color: #716f76;
-    grid-area: footer;
-    /* acomodamos los elementos */
-    display: flex;
-    /* eje X */
-    justify-content:space-between;
-    /* eje Y */
-    align-items: center;
-    /* dejo pequeño espacio alrededor */
-    padding: 5px 40px 5px 10px;
-    flex-wrap: wrap;
-    align-content: center;
-    z-index: 2;
+#footer__redes__li {
+    padding-right: 10px;
 }
+/* @@@ fin footer @@@ */
 
-#redes {
-    /* quitamos las viñetas */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-}
+/* @@@ ini home @@@ */
 
-footer div ul li {
-    /* disponemos en línea los elementos */
-    display: inline-block;
-    margin-left: 10px;
-}
-
-.footer-marca {
-    /* usamos otra fuente para la marca */
-    font-family: 'Mochiy Pop One', sans-serif;
-    color: #fff;
-    font-size: 1em;
-}
-
-footer nav {
-    display: none;
-}
-/* @@@ fin del footer @@@ */
-
-/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
-    ESTILOS PERSONALIZADOS POR CADA SECCION
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
-*/
-
-/* @@@ ini del home @@@ */
-
-#grid__home {
-    display: grid;
-    grid-template-areas: "header"
-                         "main"
-                         "footer";
-    min-height: 100vh;
-}
-
-#grid__home__main {
-    display: grid;
-    grid-template-columns: 25em 20em;
-    grid-template-areas: "home__main__section home__main__img";
-    justify-content: space-around;
-    padding: 1em 0 1em 0;
-}
-
-#home__main__section {
-    grid-area: home__main__section ;
-    padding-top: 5em;
-    flex-wrap: wrap;
-    align-content: flex-end;
-}
-
-.home__main__div_descripcion--color {
-    /* cambiamos el color del título */
-    color: #300395;
-    /* ajustamos el interlineado */
-    line-height: 1.3em;
-    font-size: 2em;
-}
-
-.home__main__div__descripcion__p {
-    padding-top: 1em;
-    /* ajustamos el interlineado */
-    line-height: 2em;
-    font-size: 1.1em;
-    color: #607680;
-}
-
-.home__main__BtnStores {
-    padding-top: 3em;
-    /* alineo los botones sobre X */
-    display: flex;
-    justify-content: space-between;
-}
-
-.home__main__img {
-    grid-area: home__main__img;
-    justify-self: center;
-    align-self  : center;
+#home{
+    padding: 3em 0 4em 3em;
 }
 
 #home_main__img--size {
     /* ajustamos tamaño de imagen */
-    width: 240px;
+    width: 200px;
     height: auto;
     /* agregamos animación para que la imagen aparezca de menor a mayor */
     animation-name: animacion__home__main;
     animation-duration: 2s;
 }
+/* @@@ fin home @@@ */
 
-#home_main__img--size--small {
-    display: none;
-     /* ajustamos tamaño de imagen  */
-    width: 244px;
-    height: auto;
+/* @@@ ini que es @@@ */
+
+#queEs__main {
+    padding: 8em 3em 3em 3em;
 }
+/* @@@ fin que es @@@ */
+
+/* @@@ ini como funciona @@@ */
+
+#grid__comoFunciona__main {
+    min-height: 80vh;
+    padding-top: 16em;
+    padding-bottom: 8em;
+}
+/* @@@ fin como funciona @@@ */
+
+/* @@@ ini experiencias @@@ */
+
+#experiencias__main {
+    padding-top: 13em;
+    padding-bottom: 7em;
+}
+/* @@@ fin experiencias @@@ */
+
+/* @@@ ini bajatela @@@ */
+
+#bajatela__main {
+    padding: 13em 3em 7em 13em;
+}
+/* @@@ fin bajatela @@@ */
+
+/* @@@ ini contato @@@ */
+
+#contacto{
+    padding: 11em 1em 5em 1em;
+}
+/* @@@ fin contacto @@@ */
+
+
+/* ############################################
+##### MEDIA QUERIES ###########################
+############################################# */
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+
+    /* @@@ ini footer @@@ */
+
+    #footer {
+        height:auto;
+    }
+
+    #footer__redes {
+        text-align-last: center;
+    }
+    /* @@@ fin footer @@@ */
+
+    /* @@@ ini home @@@ */
+
+    #home{
+        padding: .3rem 0 .3rem 0;
+    }
+
+    #home_main__img--size {
+        /* ajustamos tamaño de imagen */
+        width: 180px;
+        height: auto;
+    }
+    /* @@@ fin home @@@ */
+
+    /* @@@ ini que es @@@ */
+    #queEs__main__img2 {
+        text-align: center;
+    }
+    /* @@@ fin que es @@@ */
+
+    /* @@@ ini como funciona @@@ */
+
+    #grid__comoFunciona__main {
+        min-height: 65vh;
+        padding-top: 7em;
+        padding-bottom: 3em;
+    }
+    /* @@@ fin como funciona @@@ */
+
+    /* @@@ ini experiencias @@@ */
+
+    #experiencias__main {
+        min-height: 28vh;
+        padding-top: 5em;
+        padding-bottom: 2em;
+    }
+    
+    #experiencias__img--size {
+        /* ajustamos tamaño de imagen */
+        width: 220px;
+        height: auto;
+    }
+    /* @@@ fin experiencias @@@ */
+
+    /* @@@ ini bajatela @@@ */
+
+    #bajatela__main {
+        padding: 7em 0em 3em 0em;
+    }
+    /* @@@ fin bajatela @@@ */
+
+    /* @@@ ini contacto @@@ */
+
+    #contacto {
+        padding: 6em 1em 4em 1em;
+    }
+    /* @@@ fin contacto @@@ */    
+ }
+
 
 /* aplico la animacion solo cuando la img del home es la completa */
 @keyframes animacion__home__main {
@@ -237,615 +189,3 @@ footer nav {
         transform: scale(1);
     }
 }
-/* @@@ fin del home @@@ */
-
-/* @@@ ini  contacto @@@ */
-
-#grid__contacto {
-    display: grid;
-    grid-template-areas: "header"
-                         "contacto__main"
-                         "footer";
-    min-height: 100vh;
-}
-
-#grid__contacto__main {
-    grid-area: contacto__main;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-
-#contacto__form {
-    display: grid;
-    grid-template-columns:  50% 50%;
-    grid-template-areas: "contacto__nombre contacto__apellido"
-                         "contacto__telefono contacto__email"
-                         "contacto__mensaje contacto__mensaje"
-                         "contacto__botones .";
-    padding: 0 2em 0 2em;
-}
-
-#contacto__nombre {
-    grid-area: contacto__nombre;
-}
-
-#contacto__apellido {
-    grid-area: contacto__apellido;
-}
-
-#contacto__telefono {
-    grid-area:contacto__telefono;
-}
-
-#contacto__email {
-    grid-area:contacto__email;
-}
-
-#contacto__mensaje {
-    grid-area: contacto__mensaje;
-    
-}
-form div div textarea {
-    resize: none;
-    height: 4em;
-    width: 25em;
-}
-
-.contacto__botones {
-    grid-area: contacto__botones;
-    padding-bottom: .2em;
-}
-
-.contacto__titulo {
-    padding: 0 0 0 1em;
-}
-
-.contacto__titulo--p {
-    line-height: 25px;
-    padding: 0 0 1em 0;
-}
-
-/* modifico la clase generica a medida para el mensaje */
-.contacto__label--mensaje {
-    margin: 10px 0 5px 0px;
-}
-
-/* defino un estilo generico para los input */
-.contacto__input {
-    color: #010c11;
-}
-
-/* cambio el tamaño y color del textarea */
-#input_mensaje {
-    background-color: #edf3f6;
-}
-
-/* cambio color de fondo de los input text */
-form div div input {
-    background-color: #edf3f6;
-}
-
-/* agrando el tamaño de los botones dejando más espacio entre el contenido y los bordes */
-div button {
-    background-color: #edf3f6;
-    padding: 5px;
-}
-
-label {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* aplicamos una transicion */
-form div div input:hover, #input_mensaje:hover , div button:hover {
-    background-color: #bdc484;
-}
-/* @@@ fin contacto @@@ */
-
-/* @@@ ini queEsVacaRomana main @@@  */
-
-#grid__queEs {
-    display: grid;
-    grid-template-areas: "header"
-                         "queEs__main"
-                         "footer";
-    min-height: 100vh;
-}
-
-#grid__queEs__main {
-    grid-area:queEs__main ;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: "queEs__s1 queEs__main__img1" "queEs__s2 queEs__main__img2";
-    align-items: center;
-    padding: 1em 0 1em 1em;
-}
-
-#queEs__s1 {
-    grid-area: queEs__s1 ;
-}
-
-#queEs__s2 {
-    grid-area: queEs__s2 ;
-}
-
-.queEs__main__titulo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #300395;
-}
-
-.queEs__main__titulo--p {
-    line-height: 25px;
-    font-size: 1em;
-}
-
-#queEs__main__img1 {
-    grid-area:queEs__main__img1 ;
-    justify-self: center;
-    padding: 1em 0 .5em 0;
-}
-
-#queEs__main__img2 {
-    grid-area:queEs__main__img2 ;
-    justify-self: center;
-    padding: 1em 0 .5em 0;
-}
-/* @@@ fin queEsVacaRomana @@@  */
-
-/* @@@ ini comoFunciona @@@ */
-
-#grid__comoFunciona {
-    display: grid;
-    grid-template-areas: "header"
-                         "comoFunciona__main"
-                         "footer";
-    min-height: 100vh;
-}
-
-#grid__comoFunciona__main{
-    display: grid;
-    grid-area: comoFunciona__main;
-    grid-template-areas: "comoFunciona__main__paso1 comoFunciona__main__paso2 comoFunciona__main__paso3"
-                         "comoFunciona__main__img comoFunciona__main__img1 comoFunciona__main__img3";
-    align-items: end;
-    justify-items: center;
-}
-.comoFunciona__main__pasos {
-    /* cambiamos el color del título */
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #300395;
-    padding: 1em 0 1em 0;
-}
-
-#comoFunciona__main__paso1 {
-    grid-area: comoFunciona__main__paso1;
-}
-
-#comoFunciona__main__paso2 {
-    grid-area: comoFunciona__main__paso2;
-}
-
-#comoFunciona__main__paso3 {
-    grid-area: comoFunciona__main__paso3;
-}
-
-.comoFunciona__main__img {
-    grid-area:comoFunciona__main__img;
-}
-
-#comoFunciona__main__img1 {
-    grid-area:comoFunciona__main__img1;
-}
-
-#comoFunciona__main__img3 {
-    grid-area:comoFunciona__main__img3;
-}
-/* @@@ fin comoFunciona @@@ */
-
-/* @@@ ini experiencias @@@ */
-
-#grid__experiencias {
-    display: grid;
-    grid-template-areas: "header"
-                         "experiencias__main"
-                         "footer";
-    min-height: 100vh;                     
-}
-
-#grid__experiencias__main {
-    grid-area:experiencias__main;
-    display: grid;
-    grid-template-areas: "experiencias__titulo1 experiencias__img" "experiencias__titulo2 experiencias__img";
-    align-items: center;
-    justify-items: center;
-    padding: 1em;
-}
-
-#experiencias__titulo1 {
-    grid-area: experiencias__titulo1;
-}
-
-#experiencias__titulo2 {
-    grid-area: experiencias__titulo2;
-}
-
-.experiencias__titulo {
-    font-weight: bold;
-    font-size: 24px;
-    color: #300395;
-}
-
-.experiencias__titulo--interlineado {
-    /* ajustamos el interlineado */
-    line-height: 25px;
-}
-
-.experiencias__img{
-    grid-area:experiencias__img;
-    padding: 1em 0 1em 1em;
-} 
-/* @@@ fin experiencias @@@ */
-
-/* @@@ ini bajatela @@@ */
-
-#grid__bajatela {
-    display: grid;
-    grid-template-areas: "header"
-                         "bajatela__main"
-                         "footer";
-    min-height: 100vh;
-}
-
-#grid__bajatela__main {
-    grid-area: bajatela__main;
-    display: grid;
-    grid-template-areas: "bajatela__titulo bajatela__img" "bajatela_img_stores bajatela__img";
-    align-items:center;
-}
-
-.bajatela {
-    padding: 0 1em 0 1em;
-}
-
-.bajatela__titulo {
-    grid-area:bajatela__titulo ;
-    line-height: 25px;
-}
-
-.bajatela__img{
-    grid-area: bajatela__img;
-    align-self: center;
-    padding: 0 1em 0 0;
-} 
-
-.bajatela__img__stores {
-    grid-area:bajatela_img_stores;
-    align-items: center;
-}
-/* @@@ fin bajatela @@@ */
-
-/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
-       ESTILOS PERSONALIZADOS RESPONSIVE
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
-*/
-
-@media only screen and (max-width: 1024px) {
-    
-    /* @@@ ini main @@@ */
-
-    #home__main__section {
-        padding-left: 2em;
-        padding-top: 5em;
-    }
-
-    .home__main__BtnStores {
-        padding-top: 3em;
-        display: flex;
-        justify-content: flex-end;
-    }
-    /* @@@ fin main @@@ */
-}
-
-@media only screen and (max-width: 870px) {
-    /* @@@ ini header @@@ */
-
-    header {
-        flex-direction: column;
-    }
-    /* @@@ fin header @@@ */
-
-    /* @@@ ini main @@@ */
-
-    #home_main__img--size {
-        width: 200px;
-        height: auto;
-        padding: 0.5em 0 0 0;
-    }
-    
-    #queEs__main__img1--size {
-        transform: scale(.9);
-    }
-
-    #queEs__main__img2--size {
-        width: 200px;
-        height: auto;
-        /* padding: 0.5em 0 0 0; */
-    }
-    /* @@@ fin main @@@ */
-}
-
-@media only screen and (max-width: 768px) {
-    
-    /* @@@ ini contacto @@@ */
-
-    .contacto__titulo {
-        padding: 1em 0 0 1em;
-    }
-    /* @@@ fin contacto @@@ */
-
-    /* @@@ ini main @@@ */
-    
-    #grid__home__main {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: start;
-        align-items: flex-start;
-    }
-
-    #home__main__section {
-        padding-top: 0;
-        padding-bottom: 0em;
-        padding-left: 0;
-        text-align: center;
-    }
-    
-    .home__main__div_descripcion--color {
-        padding: 0 .5em 0em .5em;
-    }
-    
-    .home__main__div__descripcion__p {
-        padding: 0 .5em .1em .5em;
-    }
-
-    #home_main__img--size {
-        display: none;
-    }
-    
-    #home_main__img--size--small {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        /* ajustamos tamaño de imagen */
-        width: 180px;
-        height: auto;
-    }
-    
-    .home__main__BtnStores {
-        padding: 0em 0 0em 0;
-        justify-content: center;
-    }
-    /* @@@ fin main @@@ */
-
-    /* @@@ ini footer @@@ */
-
-    footer {
-        display: grid;
-        grid-template-columns: .8fr 1.3fr;
-        grid-template-areas: "redes menu"
-                             "footer-marca footer-marca";
-    }
-    
-    #redes {
-        grid-area: redes;
-        /* quitamos las viñetas */
-        display: flex;
-        flex-direction: column;
-        justify-content:left;
-        font-size: 0.8em;
-        /* ajustamos el interlineado */
-        line-height: 1.5em;
-        align-self:flex-start;
-    }
-
-    footer div ul  {
-        /* disponemos en línea los elementos */
-        display: flex;
-        flex-direction: column;
-    }
-    
-    footer div ul li {
-        /* disponemos en línea los elementos */
-        display: inline;
-        margin-left: 10px;
-    }
-
-    .footer-marca {
-        grid-area: footer-marca;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-
-    footer nav {
-        grid-area: menu;
-        display: inline-flex;
-        line-height: .1em;
-        justify-content: flex-end;
-    }
-    
-    footer nav ul li {
-        /* quitamos las viñetas */
-        list-style: none;
-        /* quitamos las viñetas */
-        display: block;
-        line-height: .5em;
-        /* para tener padding y margin hacia arriba y abajo: inline-block */
-        margin: 10px 10px 10px 4em;
-        padding: 0 5px 0 5px;
-        font-size: 0.8em;
-    }
-    /* @@@ fin footer @@@ */
-
-    /* @@@ ini contacto @@@ */
-
-    #grid__contacto__main {
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items:center;
-        flex-wrap: wrap;
-        align-content: center;  
-        padding: 1em 0 .5em 0;
-    }
-
-    #contacto__form {
-        grid-template-columns:  50% 50% ;
-        grid-template-areas: "contacto__nombre contacto__apellido"
-                             "contacto__telefono  contacto__email"
-                             "contacto__mensaje contacto__mensaje"
-                             "contacto__botones contacto__botones";
-        padding:  0 0 .1em 1em;
-    }
-
-    .contacto__titulo {
-        /* max-width: 80vw; */
-        padding: .1em 0 .1em 1em;
-    }
-    /* @@@ fin contacto @@@ */
-    
-    /* @@@ ini que es @@@ */
-
-    #grid__queEs__main {
-        grid-area:queEs__main ;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:  "queEs__s1" "queEs__main__img1"  "queEs__s2" "queEs__main__img2";
-        align-items: center;
-        text-align: center;
-    }
-
-    #queEs__s1, #queEs__s2 {
-        padding-top:1em;
-    }
-    /* @@@ fin que es @@@ */
-
-    /* @@@ ini como funcion @@@ */
-
-    #grid__comoFunciona__main{
-        grid-template-areas: "comoFunciona__main__paso1" "comoFunciona__main__img" "comoFunciona__main__paso2" "comoFunciona__main__img1" "comoFunciona__main__paso3" "comoFunciona__main__img3";
-        align-items: center;
-    }
-    /* @@@ fin como funcion @@@ */
-
-    /* @@@ ini experiencias @@@ */
-
-    #grid__experiencias__main {
-        grid-template-areas: "experiencias__titulo1" "experiencias__img" "experiencias__titulo2";
-    }
-     /* @@@ fin experiencias @@@ */
-
-     /* @@@ ini bajatela @@@ */
-
-     #grid__bajatela__main {
-        grid-template-areas: "bajatela__titulo" "bajatela_img_stores" "bajatela__img";
-        justify-items: center;
-        text-align: center;
-        padding: 1em;
-     }
-
-     .bajatela , .bajatela__img__stores{
-        padding: 0 1em 1em 1em;
-     }
-
-     .bajatela_img {
-        align-self: center;
-        justify-self: center;
-     }
-     /* @@@ fin bajatela @@@ */
-
-}
-
-@media only screen and (max-width: 500px) {
-    /* @@@ m500 ini home @@@  */
-
-    #grid__home__main {
-        padding: 1em 0 .5em 0;
-    }
-    
-    .home__main__div_descripcion--color{
-        font-size: 1.5em;
-    }
-    
-    .home__main__div__descripcion__p{
-        font-size: 1em;
-    }
-    
-    #home_main__img--size--small {
-        /* ajustamos tamaño de imagen */
-        width: 180px;
-    }
-    
-    .home__main__BtnStores {
-        padding: 1em 0 0.2em 0;
-    }
-
-    .home__main__BtnStores--size {
-        /* ajustamos tamaño de imagen */
-        transform: scale(.85);
-    }
-    /* @@@ m500 fin home @@@  */
-
-    /* @@@ m500 ini footer @@@  */
-
-    footer {
-        grid-template-columns: .8fr 2fr;
-    }
-    /* @@@ m500 fin footer @@@  */
-
-    /* @@@ m500 ini contacto @@@  */
-    
-    #contacto__form {
-        grid-template-columns:  100% ;
-        grid-template-areas: "contacto__nombre" "contacto__apellido"
-                             "contacto__telefono"  "contacto__email"
-                             "contacto__mensaje "
-                             "contacto__botones";
-        padding: 0 0 0em 1em;                     
-    }
-
-    .contacto__label--mensaje {
-        margin: 0;
-    }
-    
-    #contacto__mensaje {
-        padding: 0.5em 0 1em 0em;
-    }
-    
-    .contacto__titulo {
-        padding: .1em 1em .1em 1em;
-    }
-    
-    form div div textarea {
-        height: 4em;
-        width: 80vw;
-    }
-    /* @@@ m500 fin contacto @@@  */
-
-    /* @@@ m500 ini experiencias @@@  */
-
-    #experiencias__img--size {
-        /* ajustamos tamaño de imagen */
-        transform: scale(0.8);
-    }
-
-    .experiencias__img {
-        padding: 0;
-    }
-    /* @@@ m500 fin exoeriencias @@@  */
-}
-    
