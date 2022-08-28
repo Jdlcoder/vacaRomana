@@ -193,3 +193,23 @@ footer div div p {
         transform: scale(1);
     }
 }
+
+#nav__queEs:hover {
+    border:solid 1px white;
+}
+
+#nav__comoFunciona:hover {
+    border:solid 1px white;
+}
+
+#nav__experiencias:hover {
+    border:solid 1px white;
+}
+
+#nav__bajatela:hover {
+    border:solid 1px white;
+}
+
+#nav__contacto:hover {
+    border:solid 1px white;
+}
