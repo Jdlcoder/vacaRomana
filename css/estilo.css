@@ -1,3 +1,7 @@
+html {
+    background-color: #6D767D;
+}
+
 body {
     /* sobreescribimos la fuente por defecto */
     font-family: 'Roboto', sans-serif!important;
@@ -9,6 +13,10 @@ main {
 
 /* @@@ ini header @@@ */
 
+nav {
+    margin-top: auto;
+}
+
 .navbar-brand {
     font-family: 'Mochiy Pop One', sans-serif;
 }
@@ -16,19 +24,25 @@ main {
 
 /* @@@ ini footer @@@ */
 
+
 #footer__redes__li {
-    padding-right: 10px;
+    /* padding-right: 10px; */
 }
 
 footer div div p {
-    margin: 0 0 2px 0;
+    /* margin: 0 0 2px 0; */
+}
+
+footer div div ul li {
+    /* dejo espacio entre los íconos de redes */
+    padding: 0 1em 0 1em;
 }
 /* @@@ fin footer @@@ */
 
 /* @@@ ini home @@@ */
 
 #home{
-    padding: 3em 0 4em 3em;
+    padding: 5em 0 6em 3em;
 }
 
 #home_main__img--size {
@@ -52,30 +66,30 @@ footer div div p {
 
 #grid__comoFunciona__main {
     min-height: 80vh;
-    padding-top: 16em;
-    padding-bottom: 8em;
+    padding-top: 17em;
+    padding-bottom: 9em;
 }
 /* @@@ fin como funciona @@@ */
 
 /* @@@ ini experiencias @@@ */
 
 #experiencias__main {
-    padding-top: 13em;
-    padding-bottom: 7em;
+    padding-top: 15em;
+    padding-bottom: 9em;
 }
 /* @@@ fin experiencias @@@ */
 
 /* @@@ ini bajatela @@@ */
 
 #bajatela__main {
-    padding: 13em 3em 7em 13em;
+    padding: 15em 3em 9em 13em;
 }
 /* @@@ fin bajatela @@@ */
 
 /* @@@ ini contato @@@ */
 
 #contacto{
-    padding: 11em 1em 5em 1em;
+    padding: 13em 1em 7em 1em;
 }
 /* @@@ fin contacto @@@ */
 
@@ -194,6 +208,7 @@ footer div div p {
     }
 }
 
+/* Agregamos transición cuando pasamps el mouse sobre las opciones del navbar */
 #nav__queEs:hover {
     border:solid 1px white;
 }
@@ -213,3 +228,9 @@ footer div div p {
 #nav__contacto:hover {
     border:solid 1px white;
 }
+
+/* Agregamos transición en el form de contacto */
+.form-control:focus {
+    background-color:rgb(234, 244, 246);
+    border-color: blue;
+} 
