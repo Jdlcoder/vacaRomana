@@ -24,18 +24,13 @@ nav {
 
 /* @@@ ini footer @@@ */
 
-
-#footer__redes__li {
-    /* padding-right: 10px; */
-}
-
-footer div div p {
-    /* margin: 0 0 2px 0; */
-}
-
 footer div div ul li {
     /* dejo espacio entre los íconos de redes */
     padding: 0 1em 0 1em;
+}
+
+footer div div ul li:hover {
+    background-color: grey;
 }
 /* @@@ fin footer @@@ */
 
