@@ -1,0 +1,26 @@
+// @@@ partials @@@
+@import "./header";
+ @import "./footer";
+ @import "./home";
+ @import "./queEs";
+ @import "./comoFunciona";
+ @import "./experiencias";
+ @import "./bajatela";
+ @import "./contacto";
+ @import "./mediaQueries";
+ @import "./animaciones";
+ @import "./fonts";
+ @import "./colors";
+
+// @@@ principal @@@
+ html {
+    background-color: $color_fondo_footer;
+    body {
+        /* sobreescribimos la fuente por defecto */
+        font-family: $fuente_default;
+        main {
+            background-color: $color_fondo_main;
+        }
+    } 
+} 
+

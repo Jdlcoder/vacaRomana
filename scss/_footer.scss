@@ -1,0 +1,10 @@
+@import "./colors";
+
+footer div div ul li {
+    /* dejo espacio entre los íconos de redes */
+    padding: 0 1em 0 1em;
+}
+
+footer div div ul li:hover {
+    background-color: $color_fondo_footer_redes_hover;
+}

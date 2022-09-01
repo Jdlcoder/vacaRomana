@@ -1,0 +1,75 @@
+/* aplico la animacion solo cuando la img del home es la completa */
+@keyframes animacion__home__main {
+    0% {
+        transform: scale(0);
+    }
+    10% {
+        transform: scale(0.1);
+    }
+    20% {
+        transform: scale(0.2);
+    }
+    30% {
+        transform: scale(0.3);
+    }
+    40% {
+        transform: scale(0.4);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    60% {
+        transform: scale(0.6);
+    }
+    70% {
+        transform: scale(0.7);
+    }
+    80% {
+        transform: scale(0.8);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Agregamos transición cuando pasamps el mouse sobre las opciones del navbar */
+#nav__queEs {
+    &:hover {
+        border:solid 1px $color_borde_header_navitems;
+    }
+}
+
+#nav__comoFunciona {
+    &:hover {
+        border:solid 1px $color_borde_header_navitems;
+    }
+}
+
+#nav__experiencias {
+    &:hover {
+        border:solid 1px $color_borde_header_navitems;
+    }
+}
+
+#nav__bajatela {
+    &:hover {
+        border:solid 1px $color_borde_header_navitems;
+    }
+}
+
+#nav__contacto {
+    &:hover {
+        border:solid 1px $color_borde_header_navitems;
+    }
+}
+
+/* Agregamos transición en el form de contacto */
+.form-control {
+    &:focus {
+        background-color: $color_contacto_form_background;
+        border-color: $color_contacto_form_border;
+    } 
+}

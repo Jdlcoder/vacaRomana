@@ -1,0 +1,70 @@
+@media (max-width: 768px) { 
+
+    /* @@@ ini footer @@@ */
+
+    #footer {
+        height:auto;
+    }
+
+    #footer__redes {
+        text-align-last: center;
+    }
+    /* @@@ fin footer @@@ */
+
+    /* @@@ ini home @@@ */
+
+    #home{
+        padding: .3rem 0 .3rem 0;
+    }
+
+    #home_main__img--size {
+        /* ajustamos tamaño de imagen */
+        width: 180px;
+        height: auto;
+    }
+    /* @@@ fin home @@@ */
+
+    /* @@@ ini que es @@@ */
+    #queEs__main__img2 {
+        text-align: center;
+    }
+    /* @@@ fin que es @@@ */
+
+    /* @@@ ini como funciona @@@ */
+
+    #grid__comoFunciona__main {
+        min-height: 65vh;
+        padding-top: 7em;
+        padding-bottom: 3em;
+    }
+    /* @@@ fin como funciona @@@ */
+
+    /* @@@ ini experiencias @@@ */
+
+    #experiencias__main {
+        min-height: 28vh;
+        padding-top: 5em;
+        padding-bottom: 2em;
+    }
+    
+    #experiencias__img--size {
+        /* ajustamos tamaño de imagen */
+        width: 220px;
+        height: auto;
+    }
+    /* @@@ fin experiencias @@@ */
+
+    /* @@@ ini bajatela @@@ */
+
+    #bajatela__main {
+        padding: 7em 0em 3em 0em;
+    }
+    /* @@@ fin bajatela @@@ */
+
+    /* @@@ ini contacto @@@ */
+
+    #contacto {
+        padding: 6em 1em 4em 1em;
+    }
+    /* @@@ fin contacto @@@ */    
+ }

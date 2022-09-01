@@ -1,231 +1,140 @@
-html {
-    background-color: #6D767D;
-}
-
-body {
-    /* sobreescribimos la fuente por defecto */
-    font-family: 'Roboto', sans-serif!important;
-}
-
-main {
-    background-color: #d8d9db;
-}
-
-/* @@@ ini header @@@ */
-
+@charset "UTF-8";
 nav {
-    margin-top: auto;
-}
+  margin-top: auto; }
 
 .navbar-brand {
-    font-family: 'Mochiy Pop One', sans-serif;
-}
-/* @@@ fin header @@@ */
-
-/* @@@ ini footer @@@ */
+  font-family: "Mochiy Pop One", sans-serif; }
 
 footer div div ul li {
-    /* dejo espacio entre los íconos de redes */
-    padding: 0 1em 0 1em;
-}
+  /* dejo espacio entre los íconos de redes */
+  padding: 0 1em 0 1em; }
 
 footer div div ul li:hover {
-    background-color: grey;
-}
-/* @@@ fin footer @@@ */
+  background-color: #808080; }
 
-/* @@@ ini home @@@ */
-
-#home{
-    padding: 5em 0 6em 3em;
-}
+#home {
+  padding: 5em 0 6em 3em; }
 
 #home_main__img--size {
-    /* ajustamos tamaño de imagen */
-    width: 200px;
-    height: auto;
-    /* agregamos animación para que la imagen aparezca de menor a mayor */
-    animation-name: animacion__home__main;
-    animation-duration: 2s;
-}
-/* @@@ fin home @@@ */
-
-/* @@@ ini que es @@@ */
+  /* ajustamos tamaño de imagen */
+  width: 200px;
+  height: auto;
+  /* agregamos animación para que la imagen aparezca de menor a mayor */
+  animation-name: animacion__home__main;
+  animation-duration: 2s; }
 
 #queEs__main {
-    padding: 8em 3em 3em 3em;
-}
-/* @@@ fin que es @@@ */
-
-/* @@@ ini como funciona @@@ */
+  padding: 8em 3em 3em 3em; }
 
 #grid__comoFunciona__main {
-    min-height: 80vh;
-    padding-top: 17em;
-    padding-bottom: 9em;
-}
-/* @@@ fin como funciona @@@ */
-
-/* @@@ ini experiencias @@@ */
+  min-height: 80vh;
+  padding-top: 17em;
+  padding-bottom: 9em; }
 
 #experiencias__main {
-    padding-top: 15em;
-    padding-bottom: 9em;
-}
-/* @@@ fin experiencias @@@ */
-
-/* @@@ ini bajatela @@@ */
+  padding-top: 15em;
+  padding-bottom: 9em; }
 
 #bajatela__main {
-    padding: 15em 3em 9em 13em;
-}
-/* @@@ fin bajatela @@@ */
+  padding: 15em 3em 9em 13em; }
 
-/* @@@ ini contato @@@ */
+#contacto {
+  padding: 13em 1em 7em 1em; }
 
-#contacto{
-    padding: 13em 1em 7em 1em;
-}
-/* @@@ fin contacto @@@ */
-
-
-/* ############################################
-##### MEDIA QUERIES ###########################
-############################################# */
-
-/* // Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
-
-    /* @@@ ini footer @@@ */
-
-    #footer {
-        height:auto;
-    }
-
-    #footer__redes {
-        text-align-last: center;
-    }
-    /* @@@ fin footer @@@ */
-
-    /* @@@ ini home @@@ */
-
-    #home{
-        padding: .3rem 0 .3rem 0;
-    }
-
-    #home_main__img--size {
-        /* ajustamos tamaño de imagen */
-        width: 180px;
-        height: auto;
-    }
-    /* @@@ fin home @@@ */
-
-    /* @@@ ini que es @@@ */
-    #queEs__main__img2 {
-        text-align: center;
-    }
-    /* @@@ fin que es @@@ */
-
-    /* @@@ ini como funciona @@@ */
-
-    #grid__comoFunciona__main {
-        min-height: 65vh;
-        padding-top: 7em;
-        padding-bottom: 3em;
-    }
-    /* @@@ fin como funciona @@@ */
-
-    /* @@@ ini experiencias @@@ */
-
-    #experiencias__main {
-        min-height: 28vh;
-        padding-top: 5em;
-        padding-bottom: 2em;
-    }
-    
-    #experiencias__img--size {
-        /* ajustamos tamaño de imagen */
-        width: 220px;
-        height: auto;
-    }
-    /* @@@ fin experiencias @@@ */
-
-    /* @@@ ini bajatela @@@ */
-
-    #bajatela__main {
-        padding: 7em 0em 3em 0em;
-    }
-    /* @@@ fin bajatela @@@ */
-
-    /* @@@ ini contacto @@@ */
-
-    #contacto {
-        padding: 6em 1em 4em 1em;
-    }
-    /* @@@ fin contacto @@@ */    
- }
-
+@media (max-width: 768px) {
+  /* @@@ ini footer @@@ */
+  #footer {
+    height: auto; }
+  #footer__redes {
+    text-align-last: center; }
+  /* @@@ fin footer @@@ */
+  /* @@@ ini home @@@ */
+  #home {
+    padding: .3rem 0 .3rem 0; }
+  #home_main__img--size {
+    /* ajustamos tamaño de imagen */
+    width: 180px;
+    height: auto; }
+  /* @@@ fin home @@@ */
+  /* @@@ ini que es @@@ */
+  #queEs__main__img2 {
+    text-align: center; }
+  /* @@@ fin que es @@@ */
+  /* @@@ ini como funciona @@@ */
+  #grid__comoFunciona__main {
+    min-height: 65vh;
+    padding-top: 7em;
+    padding-bottom: 3em; }
+  /* @@@ fin como funciona @@@ */
+  /* @@@ ini experiencias @@@ */
+  #experiencias__main {
+    min-height: 28vh;
+    padding-top: 5em;
+    padding-bottom: 2em; }
+  #experiencias__img--size {
+    /* ajustamos tamaño de imagen */
+    width: 220px;
+    height: auto; }
+  /* @@@ fin experiencias @@@ */
+  /* @@@ ini bajatela @@@ */
+  #bajatela__main {
+    padding: 7em 0em 3em 0em; }
+  /* @@@ fin bajatela @@@ */
+  /* @@@ ini contacto @@@ */
+  #contacto {
+    padding: 6em 1em 4em 1em; }
+  /* @@@ fin contacto @@@ */ }
 
 /* aplico la animacion solo cuando la img del home es la completa */
 @keyframes animacion__home__main {
-    0% {
-        transform: scale(0);
-    }
-    10% {
-        transform: scale(0.1);
-    }
-    20% {
-        transform: scale(0.2);
-    }
-    30% {
-        transform: scale(0.3);
-    }
-    40% {
-        transform: scale(0.4);
-    }
-    50% {
-        transform: scale(0.5);
-    }
-    60% {
-        transform: scale(0.6);
-    }
-    70% {
-        transform: scale(0.7);
-    }
-    80% {
-        transform: scale(0.8);
-    }
-    90% {
-        transform: scale(0.9);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+  0% {
+    transform: scale(0); }
+  10% {
+    transform: scale(0.1); }
+  20% {
+    transform: scale(0.2); }
+  30% {
+    transform: scale(0.3); }
+  40% {
+    transform: scale(0.4); }
+  50% {
+    transform: scale(0.5); }
+  60% {
+    transform: scale(0.6); }
+  70% {
+    transform: scale(0.7); }
+  80% {
+    transform: scale(0.8); }
+  90% {
+    transform: scale(0.9); }
+  100% {
+    transform: scale(1); } }
 
 /* Agregamos transición cuando pasamps el mouse sobre las opciones del navbar */
 #nav__queEs:hover {
-    border:solid 1px white;
-}
+  border: solid 1px #ffffff; }
 
 #nav__comoFunciona:hover {
-    border:solid 1px white;
-}
+  border: solid 1px #ffffff; }
 
 #nav__experiencias:hover {
-    border:solid 1px white;
-}
+  border: solid 1px #ffffff; }
 
 #nav__bajatela:hover {
-    border:solid 1px white;
-}
+  border: solid 1px #ffffff; }
 
 #nav__contacto:hover {
-    border:solid 1px white;
-}
+  border: solid 1px #ffffff; }
 
 /* Agregamos transición en el form de contacto */
 .form-control:focus {
-    background-color:rgb(234, 244, 246);
-    border-color: blue;
-} 
+  background-color: #eaf4f6;
+  border-color: #0000ff; }
+
+html {
+  background-color: #6D767D; }
+  html body {
+    /* sobreescribimos la fuente por defecto */
+    font-family: "Roboto", sans-serif !important; }
+    html body main {
+      background-color: #d8d9db; }
