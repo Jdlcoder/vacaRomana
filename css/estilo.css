@@ -31,6 +31,9 @@ footer div div ul li:hover {
   padding-top: 17em;
   padding-bottom: 9em; }
 
+.comoFunciona__margin__right {
+  margin-right: 0; }
+
 #experiencias__main {
   padding-top: 15em;
   padding-bottom: 9em; }
@@ -84,6 +87,10 @@ footer div div ul li:hover {
   #contacto {
     padding: 6em 1em 4em 1em; }
   /* @@@ fin contacto @@@ */ }
+
+@media (max-width: 1024px) {
+  #bajatela__main {
+    padding: 15em 6em 9em 8em; } }
 
 /* aplico la animacion solo cuando la img del home es la completa */
 @keyframes animacion__home__main {
