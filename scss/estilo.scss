@@ -14,13 +14,24 @@
 
 // @@@ principal @@@
  html {
-    background-color: $color_fondo_footer;
+     // fix footer: comento background-color
+    // background-color: $color_fondo_footer;
     body {
         /* sobreescribimos la fuente por defecto */
         font-family: $fuente_default;
+        // fix footer: agrego flexbox para ubicar el footer
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
         main {
             background-color: $color_fondo_main;
+            // fix footer: agrego min-height
+            min-height: 100vh!important;
         }
+    }
+    footer {
+        // fix footer: agrego margin-top
+        margin-top: auto;
     } 
 } 
 

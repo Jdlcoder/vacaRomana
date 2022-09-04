@@ -28,15 +28,14 @@ footer div div ul li:hover {
 
 #grid__comoFunciona__main {
   min-height: 80vh;
-  padding-top: 17em;
-  padding-bottom: 9em; }
+  padding-top: 14em; }
 
 .comoFunciona__margin__right {
   margin-right: 0; }
 
 #experiencias__main {
-  padding-top: 15em;
-  padding-bottom: 9em; }
+  padding-top: 10em;
+  padding-bottom: 5em; }
 
 #bajatela__main {
   padding: 15em 3em 9em 13em; }
@@ -138,10 +137,15 @@ footer div div ul li:hover {
   background-color: #eaf4f6;
   border-color: #0000ff; }
 
-html {
-  background-color: #6D767D; }
-  html body {
-    /* sobreescribimos la fuente por defecto */
-    font-family: "Roboto", sans-serif !important; }
-    html body main {
-      background-color: #d8d9db; }
+html body {
+  /* sobreescribimos la fuente por defecto */
+  font-family: "Roboto", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+  html body main {
+    background-color: #d8d9db;
+    min-height: 100vh !important; }
+
+html footer {
+  margin-top: auto; }
