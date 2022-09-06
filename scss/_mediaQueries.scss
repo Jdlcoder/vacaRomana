@@ -1,19 +1,20 @@
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 
     /* @@@ ini footer @@@ */
 
     #footer {
-        height:auto;
+        height: auto;
     }
 
     #footer__redes {
         text-align-last: center;
     }
+
     /* @@@ fin footer @@@ */
 
     /* @@@ ini home @@@ */
 
-    #home{
+    #home {
         padding: .3rem 0 .3rem 0;
     }
 
@@ -22,12 +23,14 @@
         width: 180px;
         height: auto;
     }
+
     /* @@@ fin home @@@ */
 
     /* @@@ ini que es @@@ */
     #queEs__main__img2 {
         text-align: center;
     }
+
     /* @@@ fin que es @@@ */
 
     /* @@@ ini como funciona @@@ */
@@ -37,6 +40,7 @@
         padding-top: 7em;
         padding-bottom: 3em;
     }
+
     /* @@@ fin como funciona @@@ */
 
     /* @@@ ini experiencias @@@ */
@@ -44,14 +48,15 @@
     #experiencias__main {
         min-height: 28vh;
         padding-top: 5em;
-        padding-bottom: 2em;
+        padding-bottom: 0em;
     }
-    
+
     #experiencias__img--size {
         /* ajustamos tamaño de imagen */
         width: 220px;
         height: auto;
     }
+
     /* @@@ fin experiencias @@@ */
 
     /* @@@ ini bajatela @@@ */
@@ -59,6 +64,7 @@
     #bajatela__main {
         padding: 7em 0em 3em 0em;
     }
+
     /* @@@ fin bajatela @@@ */
 
     /* @@@ ini contacto @@@ */
@@ -66,10 +72,6 @@
     #contacto {
         padding: 6em 1em 4em 1em;
     }
-    /* @@@ fin contacto @@@ */    
- }
- @media (max-width: 1024px) { 
-    #bajatela__main {
-        padding: 15em 6em 9em 8em;
-    }
+
+    /* @@@ fin contacto @@@ */
 }

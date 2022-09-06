@@ -1,4 +1,34 @@
 @charset "UTF-8";
+.aumentar {
+  animation: aumentar 2s; }
+
+@keyframes aumentar {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+/* Agregamos transición cuando pasamps el mouse sobre las opciones del navbar */
+#nav__queEs:hover {
+  border: solid 1px #ffffff; }
+
+#nav__comoFunciona:hover {
+  border: solid 1px #ffffff; }
+
+#nav__experiencias:hover {
+  border: solid 1px #ffffff; }
+
+#nav__bajatela:hover {
+  border: solid 1px #ffffff; }
+
+#nav__contacto:hover {
+  border: solid 1px #ffffff; }
+
+/* Agregamos transición en el form de contacto */
+.form-control:focus {
+  background-color: #eaf4f6;
+  border-color: #0000ff; }
+
 nav {
   margin-top: auto; }
 
@@ -20,15 +50,13 @@ footer div div ul li:hover {
   width: 200px;
   height: auto;
   /* agregamos animación para que la imagen aparezca de menor a mayor */
-  animation-name: animacion__home__main;
   animation-duration: 2s; }
 
 #queEs__main {
   padding: 8em 3em 3em 3em; }
 
 #grid__comoFunciona__main {
-  min-height: 80vh;
-  padding-top: 14em; }
+  padding-top: 11em; }
 
 .comoFunciona__margin__right {
   margin-right: 0; }
@@ -38,7 +66,7 @@ footer div div ul li:hover {
   padding-bottom: 5em; }
 
 #bajatela__main {
-  padding: 15em 3em 9em 13em; }
+  padding: 15em 3em 9em 3em; }
 
 #contacto {
   padding: 13em 1em 7em 1em; }
@@ -72,7 +100,7 @@ footer div div ul li:hover {
   #experiencias__main {
     min-height: 28vh;
     padding-top: 5em;
-    padding-bottom: 2em; }
+    padding-bottom: 0em; }
   #experiencias__img--size {
     /* ajustamos tamaño de imagen */
     width: 220px;
@@ -87,61 +115,9 @@ footer div div ul li:hover {
     padding: 6em 1em 4em 1em; }
   /* @@@ fin contacto @@@ */ }
 
-@media (max-width: 1024px) {
-  #bajatela__main {
-    padding: 15em 6em 9em 8em; } }
-
-/* aplico la animacion solo cuando la img del home es la completa */
-@keyframes animacion__home__main {
-  0% {
-    transform: scale(0); }
-  10% {
-    transform: scale(0.1); }
-  20% {
-    transform: scale(0.2); }
-  30% {
-    transform: scale(0.3); }
-  40% {
-    transform: scale(0.4); }
-  50% {
-    transform: scale(0.5); }
-  60% {
-    transform: scale(0.6); }
-  70% {
-    transform: scale(0.7); }
-  80% {
-    transform: scale(0.8); }
-  90% {
-    transform: scale(0.9); }
-  100% {
-    transform: scale(1); } }
-
-/* Agregamos transición cuando pasamps el mouse sobre las opciones del navbar */
-#nav__queEs:hover {
-  border: solid 1px #ffffff; }
-
-#nav__comoFunciona:hover {
-  border: solid 1px #ffffff; }
-
-#nav__experiencias:hover {
-  border: solid 1px #ffffff; }
-
-#nav__bajatela:hover {
-  border: solid 1px #ffffff; }
-
-#nav__contacto:hover {
-  border: solid 1px #ffffff; }
-
-/* Agregamos transición en el form de contacto */
-.form-control:focus {
-  background-color: #eaf4f6;
-  border-color: #0000ff; }
-
 html body {
   /* sobreescribimos la fuente por defecto */
   font-family: "Roboto", sans-serif !important;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh; }
   html body main {
     background-color: #d8d9db;
