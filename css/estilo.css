@@ -39,16 +39,13 @@ footer div div ul li {
   /* dejo espacio entre los íconos de redes */
   padding: 0 1em 0 1em; }
 
-footer div div ul li:hover {
-  background-color: #808080; }
-
 #home {
   padding: 5em 0 6em 3em; }
 
 #home_main__img--size {
   /* ajustamos tamaño de imagen */
-  width: 200px;
   height: auto;
+  width: 200px;
   /* agregamos animación para que la imagen aparezca de menor a mayor */
   animation-duration: 2s; }
 
@@ -56,10 +53,22 @@ footer div div ul li:hover {
   padding: 8em 3em 3em 3em; }
 
 #grid__comoFunciona__main {
-  padding-top: 11em; }
+  padding-top: 11em;
+  padding-left: 1em; }
 
 .comoFunciona__margin__right {
   margin-right: 0; }
+
+.comoFuncionaBorder, .comoFuncionaBorder--white, .comoFuncionaBorder--red {
+  border: solid black 1px;
+  min-height: 40vh;
+  min-width: 30vw; }
+
+.comoFuncionaBorder--white {
+  border: solid white 2px; }
+
+.comoFuncionaBorder--red {
+  border: solid #fb0202 3px; }
 
 #experiencias__main {
   padding-top: 10em;
@@ -83,8 +92,8 @@ footer div div ul li:hover {
     padding: .3rem 0 .3rem 0; }
   #home_main__img--size {
     /* ajustamos tamaño de imagen */
-    width: 180px;
-    height: auto; }
+    height: auto;
+    width: 180px; }
   /* @@@ fin home @@@ */
   /* @@@ ini que es @@@ */
   #queEs__main__img2 {
@@ -103,8 +112,8 @@ footer div div ul li:hover {
     padding-bottom: 0em; }
   #experiencias__img--size {
     /* ajustamos tamaño de imagen */
-    width: 220px;
-    height: auto; }
+    height: auto;
+    width: 220px; }
   /* @@@ fin experiencias @@@ */
   /* @@@ ini bajatela @@@ */
   #bajatela__main {
@@ -122,6 +131,5 @@ html body {
   html body main {
     background-color: #d8d9db;
     min-height: 100vh !important; }
-
-html footer {
-  margin-top: auto; }
+  html body footer {
+    margin-top: auto; }

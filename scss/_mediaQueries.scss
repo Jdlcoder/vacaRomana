@@ -20,8 +20,7 @@
 
     #home_main__img--size {
         /* ajustamos tamaño de imagen */
-        width: 180px;
-        height: auto;
+        @include sizes(auto,180px);
     }
 
     /* @@@ fin home @@@ */
@@ -53,8 +52,7 @@
 
     #experiencias__img--size {
         /* ajustamos tamaño de imagen */
-        width: 220px;
-        height: auto;
+        @include sizes(auto,220px);
     }
 
     /* @@@ fin experiencias @@@ */

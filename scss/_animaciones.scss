@@ -15,38 +15,38 @@
 /* Agregamos transición cuando pasamps el mouse sobre las opciones del navbar */
 #nav__queEs {
     &:hover {
-        border: solid 1px $color_borde_header_navitems;
+        border: solid 1px map-get($colores,"color_borde_header_navitems");
     }
 }
 
 #nav__comoFunciona {
     &:hover {
-        border: solid 1px $color_borde_header_navitems;
+        border: solid 1px map-get($colores,"color_borde_header_navitems");
     }
 }
 
 #nav__experiencias {
     &:hover {
-        border: solid 1px $color_borde_header_navitems;
+        border: solid 1px map-get($colores,"color_borde_header_navitems");
     }
 }
 
 #nav__bajatela {
     &:hover {
-        border: solid 1px $color_borde_header_navitems;
+        border: solid 1px map-get($colores,"color_borde_header_navitems");
     }
 }
 
 #nav__contacto {
     &:hover {
-        border: solid 1px $color_borde_header_navitems;
+        border: solid 1px map-get($colores,"color_borde_header_navitems");
     }
 }
 
 /* Agregamos transición en el form de contacto */
 .form-control {
     &:focus {
-        background-color: $color_contacto_form_background;
-        border-color: $color_contacto_form_border;
+        background-color: map-get($colores,"color_contacto_form_background");
+        border-color: map-get($colores,"color_contacto_form_border");
     }
 }

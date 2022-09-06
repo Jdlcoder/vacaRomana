@@ -4,5 +4,5 @@ footer div div ul li {
 }
 
 footer div div ul li:hover {
-    background-color: $color_fondo_footer_redes_hover;
+    background-color: map-get($colores,"color-fondo-footer-redes-hover");
 }

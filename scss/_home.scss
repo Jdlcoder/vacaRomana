@@ -4,9 +4,7 @@
 
 #home_main__img--size {
     /* ajustamos tamaño de imagen */
-    width: 200px;
-    height: auto;
+    @include sizes(auto,200px);
     /* agregamos animación para que la imagen aparezca de menor a mayor */
-    // animation-name: animacion__home__main;
     animation-duration: 2s;
 }

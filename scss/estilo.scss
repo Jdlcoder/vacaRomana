@@ -3,6 +3,7 @@
 @import "./fonts";
 @import "./colors";
 @import "./animaciones";
+@import "./mixins";
 // luego colocamos los de cada sección
 @import "./header";
 @import "./footer";
@@ -20,18 +21,18 @@
 html {
     body {
         /* sobreescribimos la fuente por defecto */
-        font-family: $fuente_default;
+        font-family: map-get($fuentes, "default"), sans-serif !important;
         // fix footer: agrego flexbox para ubicar el footer
         min-height: 100vh;
 
         main {
-            background-color: $color_fondo_main;
+            background-color: map-get($colores, "color_fondo_main");
             // fix footer: agrego min-height
             min-height: 100vh !important;
         }
-    }
-    footer {
-        // fix footer: agrego margin-top
-        margin-top: auto;
+        footer {
+            // fix footer: agrego margin-top
+            margin-top: auto;
+        }
     }
 }

@@ -3,5 +3,6 @@ nav {
 }
 
 .navbar-brand {
-    font-family: $fuente_marca;
+    // font-family: $fuente_marca;
+    font-family: map-get($fuentes , "marca" ),sans-serif;
 }
