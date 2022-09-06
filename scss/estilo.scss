@@ -1,20 +1,22 @@
 // @@@ partials @@@
+@import "./fonts";
+@import "./colors";
+@import "./mediaQueries";
+@import "./animaciones";
 @import "./header";
- @import "./footer";
- @import "./home";
- @import "./queEs";
- @import "./comoFunciona";
- @import "./experiencias";
- @import "./bajatela";
- @import "./contacto";
- @import "./mediaQueries";
- @import "./animaciones";
- @import "./fonts";
- @import "./colors";
+@import "./footer";
+@import "./home";
+@import "./queEs";
+@import "./comoFunciona";
+@import "./experiencias";
+@import "./bajatela";
+@import "./contacto";
+
 
 // @@@ principal @@@
- html {
-     // fix footer: comento background-color
+html {
+
+    // fix footer: comento background-color
     // background-color: $color_fondo_footer;
     body {
         /* sobreescribimos la fuente por defecto */
@@ -23,15 +25,16 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+
         main {
             background-color: $color_fondo_main;
             // fix footer: agrego min-height
-            min-height: 100vh!important;
+            min-height: 100vh !important;
         }
     }
+
     footer {
         // fix footer: agrego margin-top
         margin-top: auto;
-    } 
-} 
-
+    }
+}
