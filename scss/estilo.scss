@@ -5,6 +5,7 @@
 @import "./animaciones";
 @import "./mixins";
 // luego colocamos los de cada sección
+@import "./global";
 @import "./header";
 @import "./footer";
 @import "./home";
@@ -15,24 +16,3 @@
 @import "./contacto";
 // por último, las mediaqueries que pueden modificar lo que se definió antes
 @import "./mediaQueries";
-
-
-// @@@ principal @@@
-html {
-    body {
-        /* sobreescribimos la fuente por defecto */
-        font-family: map-get($fuentes, "default"), sans-serif !important;
-        // fix footer: agrego flexbox para ubicar el footer
-        min-height: 100vh;
-
-        main {
-            background-color: map-get($colores, "color_fondo_main");
-            // fix footer: agrego min-height
-            min-height: 100vh !important;
-        }
-        footer {
-            // fix footer: agrego margin-top
-            margin-top: auto;
-        }
-    }
-}

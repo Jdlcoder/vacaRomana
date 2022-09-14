@@ -29,6 +29,16 @@
   background-color: #eaf4f6;
   border-color: #0000ff; }
 
+html body {
+  /* sobreescribimos la fuente por defecto */
+  font-family: "Roboto", sans-serif !important;
+  min-height: 100vh; }
+  html body main {
+    background-color: #d8d9db;
+    min-height: 100vh !important; }
+  html body footer {
+    margin-top: auto; }
+
 nav {
   margin-top: auto; }
 
@@ -123,13 +133,3 @@ footer div div ul li {
   #contacto {
     padding: 6em 1em 4em 1em; }
   /* @@@ fin contacto @@@ */ }
-
-html body {
-  /* sobreescribimos la fuente por defecto */
-  font-family: "Roboto", sans-serif !important;
-  min-height: 100vh; }
-  html body main {
-    background-color: #d8d9db;
-    min-height: 100vh !important; }
-  html body footer {
-    margin-top: auto; }
