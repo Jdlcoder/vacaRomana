@@ -36,8 +36,18 @@ html body {
   html body main {
     background-color: #d8d9db;
     min-height: 100vh !important; }
+    html body main h1 {
+      color: #6422FF; }
+    html body main button {
+      background-color: #6422FF; }
   html body footer {
     margin-top: auto; }
+
+.h2 {
+  color: #6422FF; }
+
+header nav {
+  background-color: #6422FF; }
 
 nav {
   margin-top: auto; }
@@ -98,6 +108,11 @@ footer div div ul li:hover {
 
 #bajatela__main {
   padding: 15em 3em 9em 3em; }
+
+.btn {
+  background-color: #6422FF;
+  color: white;
+  border-color: #6422FF; }
 
 #contacto {
   padding: 13em 1em 7em 1em; }

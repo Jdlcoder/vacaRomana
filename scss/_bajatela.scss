@@ -1,3 +1,9 @@
 #bajatela__main {
     padding: 15em 3em 9em 3em;
 }
+
+.btn {
+    background-color:map-get($colores, "color_contacto_button");
+    color:white;
+    border-color:map-get($colores, "color_contacto_button");   
+}
