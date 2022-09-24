@@ -72,7 +72,7 @@ footer div div ul li:hover {
   background-color: #808080; }
 
 #home {
-  padding: 5em 0 6em 3em; }
+  padding: 4em 0 0em 3em; }
 
 #home_main__img--size {
   /* ajustamos tamaño de imagen */
@@ -80,6 +80,23 @@ footer div div ul li:hover {
   width: 200px;
   /* agregamos animación para que la imagen aparezca de menor a mayor */
   animation-duration: 2s; }
+
+.container-fluid, .row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+#home_main_titulo {
+  padding-left: 11em;
+  padding-top: 11em; }
+
+.home__main__phone {
+  padding-right: 5em; }
+
+.home__botones__store {
+  padding-top: 2em;
+  text-align: left; }
 
 #queEs__main {
   padding: 8em 3em 3em 3em; }
@@ -90,17 +107,6 @@ footer div div ul li:hover {
 
 .comoFunciona__margin__right {
   margin-right: 0; }
-
-.comoFuncionaBorder, .comoFuncionaBorder--white, .comoFuncionaBorder--red {
-  border: solid black 1px;
-  min-height: 40vh;
-  min-width: 30vw; }
-
-.comoFuncionaBorder--white {
-  border: solid white 2px; }
-
-.comoFuncionaBorder--red {
-  border: solid #fb0202 3px; }
 
 #experiencias__main {
   padding-top: 10em;
@@ -117,6 +123,15 @@ footer div div ul li:hover {
 #contacto {
   padding: 13em 1em 7em 1em; }
 
+@media (max-width: 1200px) {
+  #home_main_titulo {
+    padding-left: 7em; }
+  .home__botones__store {
+    padding: 1em 0 1em 0;
+    text-align: left !important; }
+  #home_main_titulo {
+    text-align: left !important; } }
+
 @media (max-width: 768px) {
   /* @@@ ini footer @@@ */
   #footer {
@@ -127,10 +142,15 @@ footer div div ul li:hover {
   /* @@@ ini home @@@ */
   #home {
     padding: .3rem 0 .3rem 0; }
+  #home_main_titulo {
+    padding-left: 0em;
+    padding-top: 1em; }
   #home_main__img--size {
     /* ajustamos tamaño de imagen */
     height: auto;
     width: 180px; }
+  .home__botones__store {
+    text-align: center !important; }
   /* @@@ fin home @@@ */
   /* @@@ ini que es @@@ */
   #queEs__main__img2 {

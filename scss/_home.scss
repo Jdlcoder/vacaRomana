@@ -1,5 +1,5 @@
 #home{
-    padding: 5em 0 6em 3em;
+    padding: 4em 0 0em 3em;
 }
 
 #home_main__img--size {
@@ -7,4 +7,24 @@
     @include sizes(auto,200px);
     /* agregamos animación para que la imagen aparezca de menor a mayor */
     animation-duration: 2s;
+}
+.container-fluid, .row {
+    margin-right: 0!important;
+    margin-left: 0!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+#home_main_titulo {
+    padding-left: 11em;
+    padding-top: 11em;
+}
+
+.home__main__phone {
+    padding-right: 5em;;
+}
+
+.home__botones__store {
+    padding-top: 2em;
+    text-align: left;
 }

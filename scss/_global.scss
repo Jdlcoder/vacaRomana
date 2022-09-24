@@ -10,6 +10,7 @@ html {
             background-color: map-get($colores, "color_fondo_main");
             // fix footer: agrego min-height
             min-height: 100vh !important;
+
             h1 {
                 color:map-get($colores, "color_fonts_main");
             }

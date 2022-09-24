@@ -8,17 +8,17 @@
     margin-right: 0;
 }
 
-.comoFuncionaBorder {
-    border: solid black 1px;
-    @include min-sizes(40vh,30vw);
-}
+// .comoFuncionaBorder {
+//     border: solid black 1px;
+//     @include min-sizes(40vh,30vw);
+// }
 
-.comoFuncionaBorder--white {
-    @extend .comoFuncionaBorder;
-    border: solid white 2px;
-}
+// .comoFuncionaBorder--white {
+//     @extend .comoFuncionaBorder;
+//     border: solid white 2px;
+// }
 
-.comoFuncionaBorder--red {
-    @extend .comoFuncionaBorder;
-    border: solid rgb(251, 2, 2) 3px;
-}
+// .comoFuncionaBorder--red {
+//     @extend .comoFuncionaBorder;
+//     border: solid rgb(251, 2, 2) 3px;
+// }

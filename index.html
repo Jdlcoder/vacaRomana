@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- TODO: Ver si cortamos a 200px ancho las imagenes de los stores y logramos que queden alineadas con el texto de la home -->
+<!-- TODO: descargas ver si agregamos algo mas de contenido -->
+<!-- TODO
+1) Quitamos del gitignore las entradas de package-lock.json y package.json
+2) Se pasó a lowercase el contenido de la etiqueta meta keywords
+3) Quitado del li entra en footer
+4) Agrego link al home sobre el texto vaca romana @2022 del footer
+5) Se reemplaza el color azul de bootstrap por el violeta original
+6) Se reemplazan las meta keywords que eran de mas de una palabra por una simple
+7) Respecto a los scss, si bien ahora tienen poco contenido, se definió uno para cada sección para que cuando se sume contenido la estructura ya esté creada.
+8) Ver de poner más contenido en la home, ej agregar más imágenes de cómo se ve la app
+9 En la sección cómo funciona, reemplazar las imágenes por tres del mismo tamaño. En la vista mobile, dejar más espacio entre cada una de las cajas
+10) En experiencias, poner un circulo con la foto del que contó la experiecia. También, poner el texto entre comillas como para que quede tipo sic" -->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +37,7 @@
 <body>
   <!-- ini cabecera con logo + barra navegación -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-2">
       <div class="container-fluid">
         <a class="navbar-brand fs-1 text-white" href="#">Vaca Romana</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -58,22 +71,29 @@
   <main>
     <section class="container-fluid">
       <div class="row align-items-center" id="home">
-        <div class="col-12 col-md-6 text-center order-1">
+        <div class="col-12 col-md-6 text-center order-1" id="home_main_titulo">
           <h1 class="h2 fw-bold text-center text-md-start">Tus gastos, claros</h1>
           <p class="text-center text-md-start">Salí con amigos y usá nuestra app para calcular cuánto paga cada uno.</p>
-          <div class="pb-1">
-            <a href="https://play.google.com/" target="_blank"><img src="./images/google_play.png"
+          <div class="pb-1 home__botones__store">
+            <a href="https://play.google.com/" target="_blank"><img class="home__botones__store" src="./images/google_play.png"
                 alt="Imagen Google Play" width="200px" /></a>
-            <a href="https://apps.apple.com/" target="_blank"><img src="./images/app_store.png" alt="Imagen Apple Store"
+            <a href="https://apps.apple.com/" target="_blank"><img class="home__botones__store" src="./images/app_store.png" alt="Imagen Apple Store"
                 width="200px" /></a>
           </div>
 
         </div>
-        <div class="col-12 col-md-5 mt-5 pt-5 order-md-5">
+        <div class="col-12 col-md-5 mt-5 pt-5 order-md-5 home__main__phone">
           <aside class="text-center text-md-end pb-1">
             <img class="aumentar" id="home_main__img--size" src="./images/phone_index.webp" alt="Imagen teléfono">
           </aside>
         </div>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#6422FF" fill-opacity="1"
+            d="M0,160L48,165.3C96,171,192,181,288,170.7C384,160,480,128,576,128C672,128,768,160,864,154.7C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+        </svg>
       </div>
     </section>
   </main>

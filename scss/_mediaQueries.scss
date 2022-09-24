@@ -1,3 +1,18 @@
+@media (max-width: 1200px) {
+
+    #home_main_titulo {
+        padding-left: 7em;
+    }
+
+    .home__botones__store {
+        padding: 1em 0 1em 0;
+        text-align: left!important;
+    }
+
+    #home_main_titulo {
+        text-align: left!important;
+    }
+}
 @media (max-width: 768px) {
 
     /* @@@ ini footer @@@ */
@@ -18,9 +33,18 @@
         padding: .3rem 0 .3rem 0;
     }
 
+    #home_main_titulo {
+        padding-left: 0em;
+        padding-top: 1em;
+    }
+
     #home_main__img--size {
         /* ajustamos tamaño de imagen */
         @include sizes(auto,180px);
+    }
+
+    .home__botones__store {
+        text-align: center!important;
     }
 
     /* @@@ fin home @@@ */
