@@ -144,7 +144,7 @@ footer div div ul li:hover {
     text-align: left !important; }
   #bajatela__main {
     min-height: 90vh !important;
-    padding: 21em 0em 3em 0em; }
+    padding: 18em 0em 3em 0em; }
   .comoFunciona__img--size {
     /* ajustamos tamaño de imagen */
     height: auto;
@@ -184,6 +184,8 @@ footer div div ul li:hover {
     min-height: 65vh;
     padding-top: 7em;
     padding-bottom: 3em; }
+  .comoFunciona__textmain {
+    padding-right: 1em; }
   /* @@@ fin como funciona @@@ */
   /* @@@ ini experiencias @@@ */
   #experiencias__main {
