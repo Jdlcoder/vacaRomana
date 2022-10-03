@@ -25,6 +25,10 @@
         /* ajustamos tamaño de imagen */
         @include sizes(auto,180px);
     }
+
+    .comoFunciona__textmain {
+        padding-right: 1em;
+    }
 }
 @media (max-width: 768px) {
 
