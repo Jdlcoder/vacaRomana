@@ -2,7 +2,8 @@
 <html lang="es">
 
 <!-- TODO: Ver si cortamos a 200px ancho las imagenes de los stores y logramos que queden alineadas con el texto de la home -->
-<!-- TODO: descargas ver si agregamos algo mas de contenido -->
+<!-- TODO: descargas ...validar si con las imagenes cortadas se colapsan ok.  ver si agregamos algo mas de contenido -->
+<!-- TODO: Seccion bajatela, se están solapando las imagenes .. meter media query para ordenarla -->
 <!-- TODO
 1) Quitamos del gitignore las entradas de package-lock.json y package.json
 2) Se pasó a lowercase el contenido de la etiqueta meta keywords
@@ -68,19 +69,18 @@
   </header>
   <!-- fin cabecera con logo + barra navegación -->
   <!-- ini pantalla principal + descripción + link descarga app -->
-  <main>
+  <main id="home__main">
     <section class="container-fluid">
       <div class="row align-items-center" id="home">
         <div class="col-12 col-md-6 text-center order-1" id="home_main_titulo">
           <h1 class="h2 fw-bold text-center text-md-start">Tus gastos, claros</h1>
           <p class="text-center text-md-start">Salí con amigos y usá nuestra app para calcular cuánto paga cada uno.</p>
           <div class="pb-1 home__botones__store">
-            <a href="https://play.google.com/" target="_blank"><img class="home__botones__store" src="./images/google_play.png"
-                alt="Imagen Google Play" width="200px" /></a>
-            <a href="https://apps.apple.com/" target="_blank"><img class="home__botones__store" src="./images/app_store.png" alt="Imagen Apple Store"
-                width="200px" /></a>
+            <a href="https://play.google.com/" target="_blank"><img class="home__botones__store" id="home__botones__store--google" src="./images/google_play.png"
+                alt="Imagen Google Play" width="180px" /></a>
+            <a href="https://apps.apple.com/" target="_blank"><img class="home__botones__store" id="home__botones__store--apple" src="./images/app_store.png" alt="Imagen Apple Store"
+                width="180px" /></a>
           </div>
-
         </div>
         <div class="col-12 col-md-5 mt-5 pt-5 order-md-5 home__main__phone">
           <aside class="text-center text-md-end pb-1">

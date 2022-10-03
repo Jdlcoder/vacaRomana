@@ -1,5 +1,9 @@
 @media (max-width: 1200px) {
 
+    #home{
+        min-height: auto!important;
+    }
+
     #home_main_titulo {
         padding-left: 7em;
     }
@@ -11,6 +15,15 @@
 
     #home_main_titulo {
         text-align: left!important;
+    }
+
+    #bajatela__main {
+        min-height: 90vh!important ;
+        padding: 21em 0em 3em 0em;
+    }
+    .comoFunciona__img--size{
+        /* ajustamos tamaño de imagen */
+        @include sizes(auto,180px);
     }
 }
 @media (max-width: 768px) {
@@ -31,10 +44,11 @@
 
     #home {
         padding: .3rem 0 .3rem 0;
+        min-height: 90vh!important ;
     }
 
     #home_main_titulo {
-        padding-left: 0em;
+        padding-left: 3em;
         padding-top: 1em;
     }
 
@@ -45,6 +59,10 @@
 
     .home__botones__store {
         text-align: center!important;
+    }
+
+    .home__main__phone {
+        padding-right: 0;
     }
 
     /* @@@ fin home @@@ */
@@ -70,7 +88,7 @@
 
     #experiencias__main {
         min-height: 28vh;
-        padding-top: 5em;
+        padding-top: 10em;
         padding-bottom: 0em;
     }
 
@@ -84,15 +102,28 @@
     /* @@@ ini bajatela @@@ */
 
     #bajatela__main {
-        padding: 7em 0em 3em 0em;
+        min-height: 86vh!important ;
+        padding: 13em 0em 3em 0em;
     }
 
+    #bajatela__main__article__texto_botones {
+        padding: 0 1em 0 3em ;
+    }
+
+    .bajatela__main__btn {
+        padding: 1em 0 1em 0;
+    }
+
+    #bajatela__main__article__imgstore{
+        padding: 0;
+    }
     /* @@@ fin bajatela @@@ */
 
     /* @@@ ini contacto @@@ */
 
     #contacto {
-        padding: 6em 1em 4em 1em;
+        min-height: 28vh;
+        padding: 17em 1em 4em 1em;
     }
 
     /* @@@ fin contacto @@@ */

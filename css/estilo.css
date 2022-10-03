@@ -71,6 +71,9 @@ footer div div ul li {
 footer div div ul li:hover {
   background-color: #808080; }
 
+#home__main {
+  min-height: auto !important; }
+
 #home {
   padding: 4em 0 0em 3em; }
 
@@ -113,7 +116,13 @@ footer div div ul li:hover {
   padding-bottom: 5em; }
 
 #bajatela__main {
-  padding: 15em 3em 9em 3em; }
+  padding: 20em 0 9em 0; }
+
+#bajatela__main__article__texto_botones {
+  padding: 0 0 0 3em; }
+
+#bajatela__main__article__imgstore {
+  padding: 0 3em 0 0; }
 
 .btn {
   background-color: #6422FF;
@@ -124,13 +133,22 @@ footer div div ul li:hover {
   padding: 13em 1em 7em 1em; }
 
 @media (max-width: 1200px) {
+  #home {
+    min-height: auto !important; }
   #home_main_titulo {
     padding-left: 7em; }
   .home__botones__store {
     padding: 1em 0 1em 0;
     text-align: left !important; }
   #home_main_titulo {
-    text-align: left !important; } }
+    text-align: left !important; }
+  #bajatela__main {
+    min-height: 90vh !important;
+    padding: 21em 0em 3em 0em; }
+  .comoFunciona__img--size {
+    /* ajustamos tamaño de imagen */
+    height: auto;
+    width: 180px; } }
 
 @media (max-width: 768px) {
   /* @@@ ini footer @@@ */
@@ -141,9 +159,10 @@ footer div div ul li:hover {
   /* @@@ fin footer @@@ */
   /* @@@ ini home @@@ */
   #home {
-    padding: .3rem 0 .3rem 0; }
+    padding: .3rem 0 .3rem 0;
+    min-height: 90vh !important; }
   #home_main_titulo {
-    padding-left: 0em;
+    padding-left: 3em;
     padding-top: 1em; }
   #home_main__img--size {
     /* ajustamos tamaño de imagen */
@@ -151,6 +170,8 @@ footer div div ul li:hover {
     width: 180px; }
   .home__botones__store {
     text-align: center !important; }
+  .home__main__phone {
+    padding-right: 0; }
   /* @@@ fin home @@@ */
   /* @@@ ini que es @@@ */
   #queEs__main__img2 {
@@ -165,7 +186,7 @@ footer div div ul li:hover {
   /* @@@ ini experiencias @@@ */
   #experiencias__main {
     min-height: 28vh;
-    padding-top: 5em;
+    padding-top: 10em;
     padding-bottom: 0em; }
   #experiencias__img--size {
     /* ajustamos tamaño de imagen */
@@ -174,9 +195,17 @@ footer div div ul li:hover {
   /* @@@ fin experiencias @@@ */
   /* @@@ ini bajatela @@@ */
   #bajatela__main {
-    padding: 7em 0em 3em 0em; }
+    min-height: 86vh !important;
+    padding: 13em 0em 3em 0em; }
+  #bajatela__main__article__texto_botones {
+    padding: 0 1em 0 3em; }
+  .bajatela__main__btn {
+    padding: 1em 0 1em 0; }
+  #bajatela__main__article__imgstore {
+    padding: 0; }
   /* @@@ fin bajatela @@@ */
   /* @@@ ini contacto @@@ */
   #contacto {
-    padding: 6em 1em 4em 1em; }
+    min-height: 28vh;
+    padding: 17em 1em 4em 1em; }
   /* @@@ fin contacto @@@ */ }
