@@ -1,5 +1,7 @@
 @media (max-width: 1200px) {
 
+    /* @@@ ini home @@@ */
+
     #home{
         min-height: auto!important;
     }
@@ -17,10 +19,19 @@
         text-align: left!important;
     }
 
+    /* @@@ fin home @@@ */
+
+    /* @@@ ini bajatela @@@ */
+
     #bajatela__main {
         min-height: 90vh!important ;
         padding: 18em 0em 3em 0em;
     }
+
+    /* @@@ fin bajatela @@@ */
+
+    /* @@@ ini como funciona @@@ */
+
     .comoFunciona__img--size{
         /* ajustamos tamaño de imagen */
         @include sizes(auto,180px);
@@ -29,11 +40,29 @@
     .comoFunciona__textmain {
         padding-right: 1em;
     }
+
+    /* @@@ fin como funciona @@@ */
+
+    /* @@@ ini experiencias @@@ */
+
+    #experiencias__main {
+        padding-top: 8em;
+    }
+
+    /* @@@ ini experiencias @@@ */
+
+    /* @@@ ini contacto @@@ */
+
+    #contacto {
+        padding: 8em 1em 4em 1em;
+    }
+    
+    /* @@@ fin contacto @@@ */
 }
 @media (max-width: 768px) {
 
     /* @@@ ini footer @@@ */
-
+    
     #footer {
         height: auto;
     }
@@ -41,7 +70,7 @@
     #footer__redes {
         text-align-last: center;
     }
-
+    
     /* @@@ fin footer @@@ */
 
     /* @@@ ini home @@@ */
@@ -72,6 +101,7 @@
     /* @@@ fin home @@@ */
 
     /* @@@ ini que es @@@ */
+    
     #queEs__main__img2 {
         text-align: center;
     }
@@ -96,7 +126,7 @@
 
     #experiencias__main {
         min-height: 28vh;
-        padding-top: 10em;
+        padding-top: 8em;
         padding-bottom: 0em;
     }
 
@@ -111,7 +141,7 @@
 
     #bajatela__main {
         min-height: 86vh!important ;
-        padding: 13em 0em 3em 0em;
+        padding: 8em 0em 3em 0em;
     }
 
     #bajatela__main__article__texto_botones {
@@ -125,13 +155,14 @@
     #bajatela__main__article__imgstore{
         padding: 0;
     }
+    
     /* @@@ fin bajatela @@@ */
 
     /* @@@ ini contacto @@@ */
 
     #contacto {
         min-height: 28vh;
-        padding: 17em 1em 4em 1em;
+        padding: 8em 1em 4em 1em;
     }
 
     /* @@@ fin contacto @@@ */
