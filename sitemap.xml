@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://jdlcoder.github.io/vacaRomana/index.html</loc>
+  <lastmod>2022-10-03T23:17:50+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://jdlcoder.github.io/vacaRomana/pages/queEsVacaRomana.html</loc>
+  <lastmod>2022-10-03T23:17:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jdlcoder.github.io/vacaRomana/pages/comoFunciona.html</loc>
+  <lastmod>2022-10-03T23:17:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jdlcoder.github.io/vacaRomana/pages/experiencias.html</loc>
+  <lastmod>2022-10-03T23:17:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jdlcoder.github.io/vacaRomana/pages/bajatela.html</loc>
+  <lastmod>2022-10-03T23:17:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jdlcoder.github.io/vacaRomana/pages/contacto.html</loc>
+  <lastmod>2022-10-03T23:17:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
